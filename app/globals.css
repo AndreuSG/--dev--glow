@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@layer base {
+  :root {
+    --background: 39 41% 93%;
+    --foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --primary: 26 35% 76%;
+    --primary-foreground: 26 83.3% 14.1%;
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --accent: 35 91% 90%;
+    --accent-foreground: 24 9.8% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --ring: 35 91% 65%;
+    --radius: 0.75rem;
+    --golden: 199, 159, 125;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-[#F5EDE4] text-[#4A3F35];
+  }
+}
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+/* Animaciones suaves para hover */
+@layer utilities {
+  .transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+  
+  .hover\:scale-105:hover {
+    transform: scale(1.05);
+  }
+}
+
+/* Mejoras en la tipografía */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  
+  p {
+    @apply leading-relaxed;
+  }
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #C79F7D;
+  transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #C79F7D;
+}
+
+.nav-link.active {
+  color: #C79F7D;
+}
+
+/* Diagonal sections */
+.diagonal-top {
+  position: relative;
+}
+
+.diagonal-top::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: inherit;
+  clip-path: polygon(0 50%, 100% 0, 100% 100%, 0 100%);
+}
+
+.diagonal-bottom {
+  position: relative;
+}
+
+.diagonal-bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  z-index: 1;
+}
