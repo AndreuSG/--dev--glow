@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Phone, Clock } from "lucide-react";
+import { Phone, Clock, Mail, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
@@ -12,13 +12,26 @@ export function Contact() {
             Estamos aquí para responder tus preguntas y ayudarte a conseguir los
             resultados que deseas.
           </p>
-          <div className="flex items-center gap-4 mb-4 text-[#4A3F35]">
-            <Phone className="w-6 h-6" />
-            <span>+34 900 123 456</span>
-          </div>
-          <div className="flex items-center gap-4 mb-4 text-[#4A3F35]">
-            <Clock className="w-6 h-6" />
-            <span>Lun - Sab: 9:00 - 20:00</span>
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 text-[#4A3F35]">
+              <Phone className="w-6 h-6" />
+              <span>+34 601 99 52 34</span>
+            </div>
+            <div className="flex items-center gap-4 text-[#4A3F35]">
+              <Mail className="w-6 h-6" />
+              <span>glowesteticaavanzada@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-4 text-[#4A3F35]">
+              <MapPin className="w-6 h-6" />
+              <span>Calle Alberes 62, 17300 Blanes, Girona, España</span>
+            </div>
+            <div className="flex items-start gap-4 text-[#4A3F35]">
+              <Clock className="w-6 h-6 mt-1" />
+              <div>
+                <div>Lunes - Viernes: 9:00-13:00 | 15:00-19:00</div>
+                <div className="text-sm text-[#4A3F35]/70 mt-1">Sábados y Domingos: Cerrado</div>
+              </div>
+            </div>
           </div>
         </div>
         <div className="flex-1">

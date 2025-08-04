@@ -25,9 +25,7 @@ export interface WhyUsReason {
 }
 
 export interface InstagramPost {
-  id: string;
-  type: 'image' | 'video' | 'reel';
-  thumbnail: string;
+  img: string;
   caption: string;
-  likes: number;
+  link: string;
 }

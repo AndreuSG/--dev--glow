@@ -3,50 +3,108 @@ import type { ProductBrand } from "@/types/product";
 export const productBrands: Record<string, ProductBrand> = {
   toskani: {
     name: "TOSKANI",
-    description: "TOSKANI es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
+    description:
+      "TOSKANI es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
     products: [
       {
-        name: "Aquabalance Cream PRO",
-        description: "Crema hidratante de textura ligera y rápida absorción, perfecta para todo tipo de pieles. Proporciona una hidratación profunda y duradera.",
+        name: "RADIANCE COCKTAIL",
+        description: "Unifica y aclara el tono de piel",
         image: "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
-        price: "89,99€"
       },
       {
-        name: "Total Recovery Gel PRO",
-        description: "Gel reparador intensivo para pieles sensibles. Su fórmula única ayuda a calmar y restaurar la barrera cutánea.",
+        name: "WCPR",
+        description: "Corrector global y regulador de las hiperpigmentaciones.",
         image: "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
-        price: "95,99€"
       },
       {
-        name: "Sun Protection Cream PRO",
-        description: "Protector solar de amplio espectro con tecnología avanzada. Protege contra los rayos UVA/UVB mientras cuida tu piel.",
+        name: "NCPR",
+        description: "Nutrición global inmediata para rejuvenecimiento facial.",
         image: "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
-        price: "45,99€"
-      }
-    ]
+      },
+      {
+        name: "ECPR",
+        description: "Rejuvenece la zona periocular de forma intensiva.",
+        image: "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
+      },
+      {
+        name: "ANTI AGEING",
+        description: "Solución antiedad intensiva. Aporta efecto tensor y favorece la reconstrucción de la dermis.",
+        image: "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
+      },
+      {
+        name: "FIRMING",
+        description: "Potencia la síntesis de colágeno endógeno y ofrece un potente efecto reafirmante.",
+        image: "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
+      },
+    ],
   },
   casmara: {
     name: "CASMARA",
-    description: "CASMARA es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
+    description:
+      "CASMARA es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
     products: [
       {
-        name: "Hydra Lifting Mask",
-        description: "Máscara facial hidratante y reafirmante con efecto lifting inmediato. Perfecta para ocasiones especiales.",
-        image: "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
-        price: "42,99€"
+        name: "GOLDEN AGE",
+        description: "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
+        image:
+          "/img/services/plasma-pen.png",
       },
       {
-        name: "Vitamin C Ampoules",
-        description: "Ampollas concentradas de Vitamina C para un rostro luminoso y radiante. Combate los signos del envejecimiento.",
-        image: "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
-        price: "65,99€"
+        name: "SENSATIONS",
+        description: "Vitamina C Biodisponible y Oro de 24K",
+        image:
+          "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
       },
       {
-        name: "Purifying Clay Mask",
-        description: "Mascarilla purificante de arcilla que limpia profundamente los poros y equilibra la producción de sebo.",
-        image: "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
-        price: "38,99€"
-      }
-    ]
-  }
+        name: "Q 10 RESCUE",
+        description: "El rescate global para las pieles más exigentes.",
+        image:
+          "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
+      },
+      {
+        name: "RGNERIN",
+        description: "Alternativa cosmética al bótox.",
+        image:
+          "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
+      },
+      {
+        name: "AGE DEFENSE",
+        description: "Prebióticos y probióticos que restauran el microbioma.",
+        image:
+          "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+      },
+      {
+        name: "LIGHTENING",
+        description: "Tratamiento antiedad aclarante e iluminador.",
+        image:
+          "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
+      },
+      {
+        name: "SHINE STOP",
+        description:
+          "Tecnología inteligente para una piel libre de imperfecciones.",
+        image:
+          "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
+      },
+      {
+        name: "RETINOL PRO AGE",
+        description:
+          "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
+        image:
+          "/img/products/retinol-pro-age.jpg",
+      },
+      {
+        name: "INFINITY EYE SERUM",
+        description: "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
+        image:
+          "/img/products/eye-serum.jpg",
+      },
+      {
+        name: "BODY SCULPTOR",
+        description: "Crema lipo reductora-reafirmante intensiva",
+        image:
+          "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
+      },
+    ],
+  },
 };

@@ -19,12 +19,12 @@ const reasons = [
   },
   {
     title: "Dedicación",
-    description: "Técnica especializada en Plasma Pen oficial. Expertos en rejuvenecimiento no invasivo.",
+    description: "Técnica especializada en tratamientos faciales y corporales. Expertos en rejuvenecimiento no invasivo.",
     icon: Heart
   },
   {
     title: "Innovación",
-    description: "Tecnología de última generación para resultados óptimos. Blefaroplastía y lifting sin cirugía.",
+    description: "Tecnología de última generación para resultados óptimos. Plasma Pen. Blefaroplastía y lifting sin cirugía.",
     icon: Sparkles
   }
 ];

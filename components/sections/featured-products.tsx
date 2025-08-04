@@ -1,11 +1,17 @@
 "use client";
 
-import { useKeenSlider } from 'keen-slider/react';
+import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
-import { ChevronLeft, ChevronRight, ShoppingBag, ArrowRight } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  ShoppingBag,
+  ArrowRight,
+} from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
@@ -36,12 +42,20 @@ export function FeaturedProducts() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-16">
           <div>
-            <h2 className={`${playfair.className} text-4xl text-[#4A3F35] mb-4`}>Productos Destacados</h2>
+            <h2
+              className={`${playfair.className} text-4xl text-[#4A3F35] mb-4`}
+            >
+              Productos Destacados
+            </h2>
             <p className="text-[#4A3F35]/80 max-w-2xl">
-              Descubre nuestra línea profesional TOSKANI para el cuidado de tu piel
+              Descubre nuestra línea profesional TOSKANI para el cuidado de tu
+              piel
             </p>
           </div>
-          <Link href="/productos" className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors">
+          <Link
+            href="/productos"
+            className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
+          >
             <span className="font-medium">Ver todos los productos</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
@@ -56,13 +70,15 @@ export function FeaturedProducts() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="w-full lg:w-1/2"
+                    className="w-full lg:w-1/2 flex justify-center"
                   >
-                    <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl">
-                      <img
+                    <div className="bg-[#F5EDE4] rounded-2xl overflow-hidden p-4 w-full max-w-[480px]">
+                      <Image
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-full object-cover"
+                        width={500}
+                        height={500}
+                        className="w-full h-auto object-contain rounded-2xl"
                       />
                     </div>
                   </motion.div>
@@ -73,20 +89,21 @@ export function FeaturedProducts() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="w-full lg:w-1/2"
                   >
-                    <h3 className={`${playfair.className} text-4xl text-[#4A3F35] mb-4`}>
+                    <h3
+                      className={`${playfair.className} text-4xl text-[#4A3F35] mb-4`}
+                    >
                       {product.name}
                     </h3>
                     <p className="text-lg text-[#4A3F35]/80 leading-relaxed mb-8">
                       {product.description}
                     </p>
                     <div className="flex items-center gap-8">
-                      <span className="text-2xl font-medium text-[#C79F7D]">
-                        {product.price}
-                      </span>
-                      <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white px-8 py-6 text-lg">
-                        <ShoppingBag className="w-5 h-5 mr-2" />
-                        Comprar ahora
-                      </Button>
+                      <Link href={`/contacto`}>
+                        <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white px-8 py-6 text-lg">
+                          <ShoppingBag className="w-5 h-5 mr-2" />
+                          Consultar precio
+                        </Button>
+                      </Link>
                     </div>
                   </motion.div>
                 </div>
@@ -112,8 +129,8 @@ export function FeaturedProducts() {
           )}
         </div>
 
-        <Link 
-          href="/productos" 
+        <Link
+          href="/productos"
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
           <span className="font-medium">Ver todos los productos</span>

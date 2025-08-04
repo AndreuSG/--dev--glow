@@ -1,5 +1,7 @@
 import { siteConfig } from "@/config/site";
+import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
+import Image from "next/image";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -9,9 +11,12 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className={`${playfair.className} text-2xl mb-4`}>
-              {siteConfig.name}
-            </h3>
+            <Link
+              href="/"
+              className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors mb-4`}
+            >
+              <Image src="/svg/Logo.svg" alt="Logo" width={100} height={40} />
+            </Link>
             <p className="text-[#4A3F35]/80">
               Tu centro de estética avanzada de confianza
             </p>
@@ -49,7 +54,7 @@ export function Footer() {
           </div>
         </div>
         <div className="border-t border-[#4A3F35]/10 mt-8 pt-8 text-center text-[#4A3F35]/60">
-          <p>&copy; 2024 {siteConfig.name}. Todos los derechos reservados.</p>
+          <p>&copy; 2025 {siteConfig.name}. Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

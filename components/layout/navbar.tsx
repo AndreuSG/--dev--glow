@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"; // Agregar esta importación
 import { siteConfig } from "@/config/site";
 import { Playfair_Display } from "next/font/google";
-import { Sparkles, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react"; // Quitar Sparkles de aquí
 import { RiInstagramLine, RiFacebookCircleLine, RiWhatsappLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
@@ -12,14 +13,11 @@ import { usePathname } from "next/navigation";
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export function Navbar() {
-  const [isClient, setIsClient] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
-    setIsClient(true);
-    
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
     };
@@ -28,21 +26,6 @@ export function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  if (!isClient) {
-    return (
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className={`${playfair.className} text-2xl flex items-center gap-2`}>
-              <Sparkles className="w-6 h-6 text-[#C79F7D]" />
-              {siteConfig.name}
-            </div>
-          </div>
-        </div>
-      </nav>
-    );
-  }
-
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
       scrolled ? 'bg-white shadow-md' : 'bg-white/80 backdrop-blur-md'
@@ -50,8 +33,12 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors`}>
-            <Sparkles className="w-6 h-6 text-[#C79F7D]" />
-            {siteConfig.name}
+            <Image 
+              src="/img/logo-horizontal.png" 
+              alt="Logo" 
+              width={150} 
+              height={1} 
+            />
           </Link>
           
           {/* Desktop Navigation */}
@@ -71,15 +58,16 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center gap-6">
             {[
-              { Icon: RiInstagramLine, url: "#", name: "Instagram" },
-              { Icon: RiFacebookCircleLine, url: "#", name: "Facebook" },
-              { Icon: RiWhatsappLine, url: "#", name: "WhatsApp" }
+              { Icon: RiInstagramLine, url: "https://www.instagram.com/glowesteticaavanzada/", name: "Instagram" },
+              { Icon: RiFacebookCircleLine, url: "https://www.facebook.com/glowesteticaavanzada", name: "Facebook" },
+              { Icon: RiWhatsappLine, url: "https://wa.me/34601995234", name: "WhatsApp" }
             ].map(({ Icon, url, name }) => (
               <Link
                 key={name}
                 href={url}
                 className="text-foreground/80 hover:text-[#C79F7D] transition-colors"
                 aria-label={name}
+                target="_blank"
               >
                 <Icon className="w-6 h-6" />
               </Link>
@@ -87,6 +75,7 @@ export function Navbar() {
             <Button 
               variant="outline" 
               className="ml-4 hidden md:flex hover:text-[#C79F7D] transition-colors"
+              onClick={() => window.location.href = "/contacto"}
             >
               Reservar Cita
             </Button>
@@ -132,6 +121,7 @@ export function Navbar() {
                     href={url}
                     className="text-[#4A3F35]/80 hover:text-[#C79F7D] transition-colors"
                     aria-label={name}
+                    target="_blank"
                   >
                     <Icon className="w-6 h-6" />
                   </Link>

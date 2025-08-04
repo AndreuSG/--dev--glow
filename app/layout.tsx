@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: `${siteConfig.name} - Estética Avanzada`,
   description: siteConfig.description,
+  icons: {
+    icon: '/img/fav.png',
+  },
 };
 
 export default function RootLayout({

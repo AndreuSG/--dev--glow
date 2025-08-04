@@ -30,7 +30,7 @@ const sections = [
   },
   {
     title: "Nuestros Productos",
-    description: "Línea profesional TOSKANI",
+    description: "Línea profesional TOSKANI y CASMARA",
     icon: ShoppingBag,
     href: "#productos"
   },
@@ -101,32 +101,32 @@ export function Hero() {
               </div>
 
               {/* Section Categories */}
-              <div className="pb-8 -mt-64 md:-mt-48 md:mb-24">
+              <div className="pb-8 -mt-48 md:-mt-48 md:mb-24">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 md:gap-6">
                   {sections.map((section, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ delay: index * 0.1 }}
-                      className="h-full"
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="h-full"
+                  >
+                    <button 
+                    onClick={() => scrollToSection(section.href)}
+                    className="w-full h-full text-left"
                     >
-                      <button 
-                        onClick={() => scrollToSection(section.href)}
-                        className="w-full h-full text-left"
-                      >
-                        <div className={`group cursor-pointer rounded-2xl border border-white/20 transition-all duration-300 h-full p-4 md:p-8
-                          md:bg-white/10 md:backdrop-blur-sm md:hover:bg-white/20
-                          bg-white/80 backdrop-blur-md
-                        `}>
-                          <section.icon className="w-6 h-6 md:w-8 md:h-8 text-[#C79F7D] mb-4 md:mb-6" />
-                          <h3 className="text-[#4A3F35] md:text-white font-serif text-lg md:text-2xl mb-2 md:mb-3">{section.title}</h3>
-                          <p className="text-[#4A3F35]/80 md:text-white/80 text-sm leading-relaxed">
-                            {section.description}
-                          </p>
-                        </div>
-                      </button>
-                    </motion.div>
+                    <div className={`group cursor-pointer rounded-2xl border border-white/20 transition-all duration-300 h-full p-4 md:p-8
+                      md:bg-white/10 md:backdrop-blur-sm md:hover:bg-white/20
+                      bg-white/80 backdrop-blur-md
+                    `}>
+                      <section.icon className="w-6 h-6 md:w-8 md:h-8 text-[#C79F7D] mb-4 md:mb-6" />
+                      <h3 className="text-[#4A3F35] md:text-white font-serif text-lg md:text-2xl mb-2 md:mb-3">{section.title}</h3>
+                      <p className="text-[#4A3F35]/80 md:text-white/80 text-sm leading-relaxed">
+                      {section.description}
+                      </p>
+                    </div>
+                    </button>
+                  </motion.div>
                   ))}
                 </div>
               </div>

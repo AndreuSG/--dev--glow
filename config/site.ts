@@ -1,6 +1,7 @@
 export const siteConfig = {
   name: "Glow",
-  description: "Centro de estética avanzada especializado en tratamientos faciales y corporales",
+  description:
+    "Centro de estética avanzada especializado en tratamientos faciales y corporales",
   mainNav: [
     { label: "Inicio", href: "/" },
     { label: "Servicios", href: "/servicios" },
@@ -10,68 +11,81 @@ export const siteConfig = {
   ],
   featuredServices: [
     {
-      title: "Carbon Peeling",
-      description: "Tratamiento facial avanzado para una piel radiante y rejuvenecida",
-      image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      title: "Plasma Pen",
+      description:
+        "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
+      image: "/img/services/plasma-pen.png",
     },
     {
-      title: "Eliminación de Manchas",
-      description: "Tecnología láser de última generación para una piel uniforme",
-      image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+      title: "Criolipólisis",
+      description:
+        "Técnica de reducción de grasa localizada mediante la aplicación de frío controlado.",
+      image:
+        "https://images.unsplash.com/photo-1618141397640-58d3f5ac3f5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
     },
     {
-      title: "Eliminación de Tatuajes",
-      description: "Sistema avanzado de eliminación sin cicatrices",
-      image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
-    }
+      title: "Láser de Nd Yag Q-Switched",
+      description:
+        "Tecnología láser avanzada para eliminar manchas, tatuajes y mejorar la textura de la piel.",
+      image:
+        "https://images.unsplash.com/photo-1597764692548-3a40305e7d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+    },
+  ],
+  services: [
+    {
+      title: "Eliminación de tatuajes",
+      description:
+        "Tecnología láser Q-Switched de última generación para eliminar tatuajes de forma segura y efectiva, respetando tu piel.",
+      image:
+        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+    },
+    {
+      title: "Blefaroplastia sin cirugía",
+      description:
+        "Rejuvenecimiento del contorno de ojos mediante técnicas no invasivas, eliminando bolsas y flacidez sin intervención quirúrgica.",
+      image:
+        "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+    },
+    {
+      title: "Mesoterapia transdérmica",
+      description:
+        "Tratamiento innovador que permite la penetración profunda de principios activos sin agujas, para rejuvenecimiento facial y corporal.",
+      image:
+        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80",
+    },
   ],
   featuredProducts: [
     {
-      name: "Aquabalance Cream PRO",
-      description: "Aquabalance Cream de TOSKANI tiene una textura ligera y de rápida absorción",
-      image: "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
-      price: "89,99€"
+      name: "Golden Age",
+      description:
+        "Crema nutritiva de textura ligera formulada a base de exosomas, vitamina B12 y colágeno biomimético para aportar el cuidado global que tu piel necesita y devolverle la juventud redefiniendo los contornos de tu rostro.",
+      image:
+        "/img/products/golden-age2.webp",
     },
     {
-      name: "Total Recovery Gel PRO",
-      description: "Total Recovery Cream es una crema reparadora intensiva para pieles sensibles",
-      image: "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
-      price: "95,99€"
+      name: "Infinity Eye Serum",
+      description:
+        "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
+      image:
+        "/img/products/eye-serum.jpg",
     },
     {
-      name: "Sun Protection Cream PRO",
-      description: "Sun Protection Cream de TOSKANI es un protector solar de amplio espectro",
-      image: "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
-      price: "45,99€"
+      name: "Retinol Pro Age",
+      description:
+        "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
+      image:
+        "/img/products/retinol-pro-age.jpg",
     },
-    {
-      name: "Energizing Cleanser",
-      description: "Limpiador facial energizante para una limpieza profunda y revitalizante",
-      image: "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
-      price: "35,99€"
-    },
-    {
-      name: "Bamboo Hydratonic",
-      description: "Tónico hidratante con extracto de bambú para una piel equilibrada",
-      image: "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
-      price: "29,99€"
-    },
-    {
-      name: "Antistress Mask",
-      description: "Mascarilla calmante para pieles estresadas y sensibles",
-      image: "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
-      price: "42,99€"
-    }
   ],
   socialLinks: [
     {
       name: "Instagram",
-      url: "#",
+      url: "https://www.instagram.com/glowesteticaavanzada/",
       icon: `<path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>`,
     },
     {
       name: "Facebook",
-      url: "#",
+      url: "https://www.facebook.com/glowesteticaavanzada",
       icon: `<path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>`,
     },
     {
@@ -100,4 +114,4 @@ export const siteConfig = {
       ],
     },
   ],
-}
+};

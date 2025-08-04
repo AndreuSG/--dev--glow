@@ -5,24 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
-
-const services = [
-  {
-    title: "Tratamiento Facial Premium",
-    description: "Rejuvenecimiento completo con tecnología de última generación",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  },
-  {
-    title: "Masaje Terapéutico",
-    description: "Técnicas avanzadas para aliviar tensiones y mejorar el bienestar",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  },
-  {
-    title: "Tratamiento Corporal Detox",
-    description: "Purificación y renovación completa para tu cuerpo",
-    image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
-  }
-];
+import { siteConfig } from "@/config/site";
 
 export function Services() {
   return (
@@ -44,7 +27,7 @@ export function Services() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+          {siteConfig.services.map((service, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}

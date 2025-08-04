@@ -1,4 +1,12 @@
-import { Check, Users, Heart, Sparkles, Star, ShoppingBag, MessageCircle } from "lucide-react";
+import {
+  Check,
+  Users,
+  Heart,
+  Sparkles,
+  Star,
+  ShoppingBag,
+  MessageCircle,
+} from "lucide-react";
 import type { HeroSection, WhyUsReason, InstagramPost } from "@/types/home";
 
 export const heroSection: HeroSection = {
@@ -6,97 +14,95 @@ export const heroSection: HeroSection = {
   buttons: {
     primary: {
       text: "Conoce nuestro equipo",
-      href: "/equipo"
+      href: "/equipo",
     },
     secondary: {
       text: "Contáctanos",
-      href: "/contacto"
-    }
+      href: "/contacto",
+    },
   },
   categories: [
     {
       title: "¿Por qué elegirnos?",
       description: "Descubre lo que nos hace únicos",
       icon: "Heart",
-      href: "#why-us"
+      href: "#why-us",
     },
     {
       title: "Novedades",
       description: "Descubre nuestros tratamientos más innovadores",
       icon: "Sparkles",
-      href: "#novedades"
+      href: "#novedades",
     },
     {
       title: "Servicios Destacados",
       description: "Tratamientos exclusivos para tu belleza",
       icon: "Star",
-      href: "#servicios"
+      href: "#servicios",
     },
     {
       title: "Nuestros Productos",
-      description: "Línea profesional TOSKANI",
+      description: "Línea profesional TOSKANI y CASMARA",
       icon: "ShoppingBag",
-      href: "#productos"
+      href: "#productos",
     },
     {
       title: "Opiniones",
-      description: "Lo que dicen nuestros clientes",
+      description: "Descubre lo que opinan nuestros clientes",
       icon: "MessageCircle",
-      href: "#testimonios"
-    }
-  ]
+      href: "#testimonios",
+    },
+  ],
 };
 
 export const whyUsReasons: WhyUsReason[] = [
   {
     title: "Experiencia",
-    description: "30 años de experiencia y especialización en estética avanzada. Profesionales altamente cualificados.",
-    icon: "Check"
+    description:
+      "30 años de experiencia y especialización en estética avanzada. Profesionales altamente cualificados.",
+    icon: "Check",
   },
   {
     title: "Personalización",
-    description: "Tratamientos adaptados a tus necesidades específicas. Atención individualizada y seguimiento continuo.",
-    icon: "Users"
+    description:
+      "Tratamientos adaptados a tus necesidades específicas. Atención individualizada y seguimiento continuo.",
+    icon: "Users",
   },
   {
     title: "Dedicación",
-    description: "Técnica especializada en Plasma Pen oficial. Expertos en rejuvenecimiento no invasivo.",
-    icon: "Heart"
+    description:
+      "Técnica especializada en Plasma Pen oficial. Expertos en rejuvenecimiento no invasivo.",
+    icon: "Heart",
   },
   {
     title: "Innovación",
-    description: "Tecnología de última generación para resultados óptimos. Blefaroplastía y lifting sin cirugía.",
-    icon: "Sparkles"
-  }
+    description:
+      "Tecnología de última generación para resultados óptimos. Blefaroplastía y lifting sin cirugía.",
+    icon: "Sparkles",
+  },
 ];
 
 export const instagramPosts: InstagramPost[] = [
   {
-    id: "1",
-    type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-    caption: "Consejos para una piel radiante 💫 #GlowSkin #Beauty",
-    likes: 124
+    img: "/img/team/rosa.png",
+    caption:
+      "✨¡Tú eres nuestra prioridad! ✨ Queremos sacar a relucir tu mejor versión y ofrecerte una experiencia única y personalizada.",
+    link: "https://www.instagram.com/p/CV1a5k8F3g/",
   },
   {
-    id: "2",
-    type: "video",
-    thumbnail: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-    caption: "Nuevo tratamiento disponible 🌟 #GlowUp",
-    likes: 89
+    img: "/img/post3.png",
+    caption: "Antes y después. Resultados en menos de 3 meses 🌟 #GlowUp",
+    link: "https://www.instagram.com/reel/C1HMbhALMrg/?utm_source=ig_web_copy_link&igsh=MXVlbnA5YXM1OXYxNw==",
   },
   {
-    id: "3",
-    type: "reel",
-    thumbnail: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-    caption: "Antes y después increíble ✨ #Transformation",
-    likes: 256
+    img: "/img/post4.png",
+    caption: "Centro especializado en plasma pen ✨ #Transformation",
+    link: "https://www.instagram.com/p/DKzXqoltcrc/?utm_source=ig_web_copy_link&igsh=MTg3eG4zMHN6MG9mZQ==",
   },
   {
-    id: "4",
-    type: "image",
-    thumbnail: "https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-    caption: "Promoción especial este mes 🎉 #GlowOffers",
-    likes: 167
-  }
+    img: "/img/post5.png",
+    caption:
+      "¡El verano está llegando! Tiempo de sol, playa y momentos al aire libre. Pero recuerda,también aumenta la exposición de tu piel. Este es el momento perfecto para prepararla, fortalecerla y protegerla. La mejor opción es nuestra mesoterapia, un tratamiento que consiste en aplicar pequeñas dosis de vitaminas, minerales y otros ingredientes activos directamente en la piel.",
+    link: "https://www.instagram.com/p/DKNO8Pst3d0/?utm_source=ig_web_copy_link&igsh=Nmx3bncxdmhscWts",
+  },
 ];
