@@ -1,8 +1,13 @@
 const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   output: 'export',
+  basePath: isProd ? '/glow' : '',
+  assetPrefix: isProd ? '/glow/' : '',
+  trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
