@@ -1,20 +1,22 @@
+import { prefixPath } from "@/lib/prefixPath";
+
 export const siteConfig = {
   name: "Glow",
   description:
     "Centro de estética avanzada especializado en tratamientos faciales y corporales",
   mainNav: [
-    { label: "Inicio", href: "/" },
-    { label: "Servicios", href: "/servicios" },
-    { label: "Productos", href: "/productos" },
-    { label: "Nuestro Equipo", href: "/equipo" },
-    { label: "Contacto", href: "/contacto" },
+    { label: "Inicio", href: prefixPath("/") },
+    { label: "Servicios", href: prefixPath("/servicios") },
+    { label: "Productos", href: prefixPath("/productos") },
+    { label: "Nuestro Equipo", href: prefixPath("/equipo") },
+    { label: "Contacto", href: prefixPath("/contacto") },
   ],
   featuredServices: [
     {
       title: "Plasma Pen",
       description:
         "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
-      image: "/img/services/plasma-pen.png",
+      image: prefixPath("/img/services/plasma-pen.png"),
     },
     {
       title: "Criolipólisis",
@@ -59,22 +61,19 @@ export const siteConfig = {
       name: "Golden Age",
       description:
         "Crema nutritiva de textura ligera formulada a base de exosomas, vitamina B12 y colágeno biomimético para aportar el cuidado global que tu piel necesita y devolverle la juventud redefiniendo los contornos de tu rostro.",
-      image:
-        "/img/products/golden-age2.webp",
+      image: prefixPath("/img/products/golden-age2.webp"),
     },
     {
       name: "Infinity Eye Serum",
       description:
         "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
-      image:
-        "/img/products/eye-serum.jpg",
+      image: prefixPath("/img/products/eye-serum.jpg"),
     },
     {
       name: "Retinol Pro Age",
       description:
         "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
-      image:
-        "/img/products/retinol-pro-age.jpg",
+      image: prefixPath("/img/products/retinol-pro-age.jpg"),
     },
   ],
   socialLinks: [
@@ -109,7 +108,7 @@ export const siteConfig = {
       items: [
         { label: "Sobre Nosotros", href: "#" },
         { label: "Contacto", href: "#" },
-        { label: "Nuestro Equipo", href: "/equipo" },
+        { label: "Nuestro Equipo", href: prefixPath("/equipo") },
         { label: "FAQ", href: "#" },
       ],
     },

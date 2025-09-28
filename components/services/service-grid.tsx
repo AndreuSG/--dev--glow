@@ -5,6 +5,7 @@ import { Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import type { Service } from "@/types/service";
+import { prefixPath } from "@/lib/prefixPath";
 
 interface ServiceGridProps {
   services: Service[];
@@ -45,7 +46,7 @@ export function ServiceGrid({ services }: ServiceGridProps) {
                   <span className="text-xl font-medium text-[#C79F7D]">
                     {service.price}
                   </span>
-                  <Link href="/contacto">
+                  <Link href={prefixPath("/contacto")}>
                     <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white">
                       Reservar ahora
                     </Button>
