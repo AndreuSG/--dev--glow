@@ -1,7 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
-import * as Icons from "lucide-react";
+import { ShoppingBag, MessageCircle } from "lucide-react";
+
+const iconMap = {
+  ShoppingBag,
+  MessageCircle,
+};
 
 interface CategoryCardProps {
   category: {
@@ -15,7 +20,7 @@ interface CategoryCardProps {
 }
 
 export function CategoryCard({ category, index, onClick }: CategoryCardProps) {
-  const Icon = Icons[category.icon as keyof typeof Icons];
+  const Icon = iconMap[category.icon as keyof typeof iconMap];
 
   return (
     <motion.div
@@ -32,7 +37,9 @@ export function CategoryCard({ category, index, onClick }: CategoryCardProps) {
           md:bg-white/10 md:backdrop-blur-sm md:hover:bg-white/20
           bg-white/80 backdrop-blur-md
         `}>
-          <Icon className="w-6 h-6 md:w-8 md:h-8 text-[#C79F7D] mb-4 md:mb-6" />
+          {Icon && (
+            <Icon className="w-6 h-6 md:w-8 md:h-8 text-[#C79F7D] mb-4 md:mb-6" />
+          )}
           <h3 className="text-[#4A3F35] md:text-white font-serif text-lg md:text-2xl mb-2 md:mb-3">
             {category.title}
           </h3>
