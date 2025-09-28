@@ -1,4 +1,5 @@
 import type { ProductBrand } from "@/types/product";
+import { prefixPath } from "@/lib/prefixPath";
 
 export const productBrands: Record<string, ProductBrand> = {
   toskani: {
@@ -46,8 +47,7 @@ export const productBrands: Record<string, ProductBrand> = {
       {
         name: "GOLDEN AGE",
         description: "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
-        image:
-          "/img/services/plasma-pen.png",
+        image: prefixPath("/img/services/plasma-pen.png"),
       },
       {
         name: "SENSATIONS",
@@ -90,14 +90,12 @@ export const productBrands: Record<string, ProductBrand> = {
         name: "RETINOL PRO AGE",
         description:
           "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
-        image:
-          "/img/products/retinol-pro-age.jpg",
+        image: prefixPath("/img/products/retinol-pro-age.jpg"),
       },
       {
         name: "INFINITY EYE SERUM",
         description: "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
-        image:
-          "/img/products/eye-serum.jpg",
+        image: prefixPath("/img/products/eye-serum.jpg"),
       },
       {
         name: "BODY SCULPTOR",
