@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image"; // Agregar esta importación
 import { siteConfig } from "@/config/site";
+import { prefixPath } from "@/lib/prefixPath";
 import { Playfair_Display } from "next/font/google";
 import { Menu, X } from "lucide-react"; // Quitar Sparkles de aquí
 import { RiInstagramLine, RiFacebookCircleLine, RiWhatsappLine } from "react-icons/ri";
@@ -17,6 +18,14 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+  const normalizedBasePath =
+    basePath && basePath.endsWith('/') && basePath !== '/' ? basePath.slice(0, -1) : basePath;
+  const normalizedPathname =
+    normalizedBasePath && pathname.startsWith(normalizedBasePath)
+      ? pathname
+      : `${normalizedBasePath}${pathname}`;
+  const logoSrc = prefixPath("/img/logo-horizontal.png");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,12 +42,15 @@ export function Navbar() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors`}>
-            <Image 
-              src="/img/logo-horizontal.png" 
-              alt="Logo" 
-              width={150} 
-              height={1} 
+          <Link
+            href={prefixPath("/")}
+            className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors`}
+          >
+            <Image
+              src={logoSrc}
+              alt="Logo"
+              width={150}
+              height={1}
             />
           </Link>
           
@@ -49,7 +61,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`nav-link text-sm font-medium ${
-                  pathname === item.href ? 'active' : ''
+                  normalizedPathname === item.href ? 'active' : ''
                 }`}
               >
                 {item.label}
@@ -104,7 +116,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`text-lg font-medium ${
-                    pathname === item.href ? 'text-[#C79F7D]' : 'text-[#4A3F35]'
+                    normalizedPathname === item.href ? 'text-[#C79F7D]' : 'text-[#4A3F35]'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >

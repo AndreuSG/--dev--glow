@@ -16,6 +16,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
+import { prefixPath } from "@/lib/prefixPath";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -53,7 +54,7 @@ export function FeaturedProducts() {
             </p>
           </div>
           <Link
-            href="/productos"
+            href={prefixPath("/productos")}
             className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
           >
             <span className="font-medium">Ver todos los productos</span>
@@ -98,7 +99,7 @@ export function FeaturedProducts() {
                       {product.description}
                     </p>
                     <div className="flex items-center gap-8">
-                      <Link href={`/contacto`}>
+                      <Link href={prefixPath("/contacto")}>
                         <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white px-8 py-6 text-lg">
                           <ShoppingBag className="w-5 h-5 mr-2" />
                           Consultar precio
@@ -130,7 +131,7 @@ export function FeaturedProducts() {
         </div>
 
         <Link
-          href="/productos"
+          href={prefixPath("/productos")}
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
           <span className="font-medium">Ver todos los productos</span>
