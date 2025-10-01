@@ -1,6 +1,6 @@
 
 import { Button } from "../../components/ui/button";
-import { ChevronDown, Sparkles, Star } from "lucide-react";
+import { ChevronDown, Star } from "lucide-react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { heroSection } from "../../config/home";
@@ -21,10 +21,14 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen overflow-hidden bg-white">
-      <div className="absolute inset-0 opacity-40">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#C79F7D]/20 to-rose-200/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-br from-amber-200/20 to-[#C79F7D]/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+    <section className="relative min-h-screen overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url(https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 min-h-screen flex flex-col justify-between">
@@ -34,9 +38,9 @@ export function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-gradient-to-r from-[#C79F7D]/10 to-rose-100/50 rounded-full mb-8 border border-[#C79F7D]/20">
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-white/80 backdrop-blur-sm rounded-full mb-8 border border-[#C79F7D]/30 shadow-sm">
               <Star className="w-4 h-4 text-[#C79F7D] fill-[#C79F7D]" />
-              <span className="text-sm font-medium bg-gradient-to-r from-[#C79F7D] to-rose-600 bg-clip-text text-transparent">
+              <span className="text-sm font-medium text-[#C79F7D]">
                 30 años de experiencia en estética avanzada
               </span>
               <Star className="w-4 h-4 text-[#C79F7D] fill-[#C79F7D]" />
@@ -44,12 +48,12 @@ export function Hero() {
 
             <h1 className="text-6xl sm:text-7xl lg:text-8xl mb-8 leading-none">
               <span className="block font-light text-gray-800 mb-2">Descubre tu</span>
-              <span className="block font-bold bg-gradient-to-r from-[#C79F7D] via-rose-400 to-amber-400 bg-clip-text text-transparent">
+              <span className="block font-bold text-[#C79F7D]">
                 Glow Natural
               </span>
             </h1>
 
-            <p className="text-xl sm:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+            <p className="text-xl sm:text-2xl text-gray-700 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
               Tratamientos personalizados que realzan tu belleza única con la última tecnología en estética
             </p>
           </motion.div>
@@ -63,17 +67,16 @@ export function Hero() {
             <Link to={heroSection.buttons.primary.href}>
               <Button
                 size="lg"
-                className="group relative overflow-hidden bg-gradient-to-r from-[#C79F7D] to-[#B68E6C] text-white hover:shadow-2xl transition-all duration-300 text-lg px-10 py-7 rounded-full"
+                className="group relative overflow-hidden bg-[#C79F7D] text-white hover:bg-[#B68E6C] hover:shadow-2xl transition-all duration-300 text-lg px-10 py-7 rounded-full"
               >
                 <span className="relative z-10">{heroSection.buttons.primary.text}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-[#B68E6C] to-[#C79F7D] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </Button>
             </Link>
             <Link to={heroSection.buttons.secondary.href}>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#C79F7D] text-[#C79F7D] hover:bg-[#C79F7D] hover:text-white transition-all duration-300 text-lg px-10 py-7 rounded-full"
+                className="border-2 border-[#C79F7D] text-[#C79F7D] hover:bg-[#C79F7D] hover:text-white transition-all duration-300 text-lg px-10 py-7 rounded-full bg-white/80 backdrop-blur-sm"
               >
                 {heroSection.buttons.secondary.text}
               </Button>
@@ -86,14 +89,14 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="relative mb-16"
           >
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#C79F7D]/30 via-transparent to-rose-400/30 z-10" />
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
+              <div className="absolute inset-0 bg-[#C79F7D]/20 z-10" />
               <img
                 src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Tratamiento de belleza profesional"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-8 z-20">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#C79F7D]/95 to-transparent p-8 z-20">
                 <div className="flex items-center justify-center gap-8 text-white">
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-1">30+</div>
@@ -120,7 +123,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-6xl mx-auto mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 max-w-6xl mx-auto mb-8">
             {heroSection.categories.map((category, index) => (
               <motion.button
                 key={index}
@@ -128,16 +131,13 @@ export function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 + index * 0.1 }}
                 onClick={() => scrollToSection(category.href)}
-                className="group relative bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-[#C79F7D] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                className="group relative bg-white/90 backdrop-blur-md rounded-2xl p-5 border-2 border-[#C79F7D]/20 hover:border-[#C79F7D] hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
-                <div className="flex flex-col items-center gap-3">
-                  <div className="relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-[#C79F7D] to-rose-400 rounded-full blur-lg opacity-0 group-hover:opacity-50 transition-opacity duration-300" />
-                    <div className="relative w-14 h-14 rounded-full bg-gradient-to-br from-[#C79F7D]/10 to-rose-100 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <category.icon className="w-7 h-7 text-[#C79F7D]" />
-                    </div>
+                <div className="flex flex-row sm:flex-col items-center sm:items-center gap-4 sm:gap-3">
+                  <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#C79F7D]/10 flex items-center justify-center flex-shrink-0">
+                    <category.icon className="w-6 h-6 sm:w-7 sm:h-7 text-[#C79F7D]" />
                   </div>
-                  <span className="text-sm font-semibold text-gray-700 text-center leading-tight group-hover:text-[#C79F7D] transition-colors duration-300">
+                  <span className="text-sm sm:text-sm font-semibold text-gray-800 text-left sm:text-center leading-tight flex-1 sm:flex-initial">
                     {category.title}
                   </span>
                 </div>
@@ -148,7 +148,7 @@ export function Hero() {
           <div className="text-center">
             <button
               onClick={() => scrollToSection("#why-us")}
-              className="text-gray-400 hover:text-[#C79F7D] flex flex-col items-center gap-2 animate-bounce mx-auto transition-colors duration-300"
+              className="text-[#C79F7D] hover:text-[#B68E6C] flex flex-col items-center gap-2 animate-bounce mx-auto transition-colors duration-300"
             >
               <span className="text-sm font-medium">Descubre más</span>
               <ChevronDown className="w-5 h-5" />
