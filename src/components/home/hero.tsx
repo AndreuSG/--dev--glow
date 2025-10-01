@@ -36,7 +36,7 @@ export function Hero() {
           }}
         >
           <div className="absolute inset-0 bg-black/40" />
-          <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col">
+          <div className="relative h-full max-w-7xl mx-auto px-4 flex flex-col justify-between py-8">
             <div className="flex-1 flex flex-col justify-center">
               <div className="max-w-2xl text-white mb-8 md:mb-16 pt-32 md:pt-0">
                 <h1
@@ -65,23 +65,21 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Section Categories - Compact pills, desktop only */}
-            <div className="hidden lg:block pb-20">
-              <div className="flex justify-center gap-3 flex-wrap max-w-4xl mx-auto">
-                {heroSection.categories.map((category, index) => (
-                  <motion.button
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={() => scrollToSection(category.href)}
-                    className="rounded-lg border border-white/30 transition-all duration-300 px-4 py-2 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/50 flex items-center gap-2"
-                  >
-                    <category.icon className="w-4 h-4 text-[#C79F7D]" />
-                    <span className="text-white text-sm font-medium whitespace-nowrap">{category.title}</span>
-                  </motion.button>
-                ))}
-              </div>
+            {/* Section Categories - Compact pills */}
+            <div className="hidden lg:flex justify-center gap-3 flex-wrap max-w-5xl mx-auto mb-16">
+              {heroSection.categories.map((category, index) => (
+                <motion.button
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  onClick={() => scrollToSection(category.href)}
+                  className="rounded-lg border border-white/30 transition-all duration-300 px-5 py-2.5 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/50 flex items-center gap-2"
+                >
+                  <category.icon className="w-4 h-4 text-[#C79F7D]" />
+                  <span className="text-white text-sm font-medium whitespace-nowrap">{category.title}</span>
+                </motion.button>
+              ))}
             </div>
 
             {/* Discover More Arrow */}
@@ -89,11 +87,11 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8 }}
-              className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 text-center"
+              className="text-center mb-4"
             >
               <button
                 onClick={() => scrollToSection("#why-us")}
-                className="text-white flex flex-col items-center gap-2 animate-bounce"
+                className="text-white flex flex-col items-center gap-2 animate-bounce mx-auto"
               >
                 <span className="text-sm font-medium">Descubre más</span>
                 <ChevronDown className="w-6 h-6" />
