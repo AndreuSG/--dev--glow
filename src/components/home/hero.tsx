@@ -28,7 +28,7 @@ export function Hero() {
           backgroundImage: 'url(https://images.pexels.com/photos/3852159/pexels-photo-3852159.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/70 via-white/75 to-white/80" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-20 min-h-screen flex flex-col justify-center">
