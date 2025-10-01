@@ -69,30 +69,30 @@ export function Hero() {
             }}
           >
             <div className="absolute inset-0 bg-black/40" />
-            <div className="relative h-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
+            <div className="relative h-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
               {/* Hero Content */}
-              <div className="flex-1 flex flex-col justify-center pt-24 md:pt-32 pb-8">
+              <div className="flex-1 flex items-center pt-32">
                 <div className="max-w-2xl text-white">
                   <h1
-                    className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-4 md:mb-6 leading-tight"
+                    className="font-serif text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight"
                     style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}
                   >
                     Glow estética avanzada
                   </h1>
-                  <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-8 md:mb-0">
-                    <Link to="/equipo" className="w-full sm:w-auto">
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <Link to="/equipo">
                       <Button
                         size="lg"
-                        className="hidden md:inline-flex w-full bg-white text-black hover:bg-white/90 text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
+                        className="bg-white text-black hover:bg-white/90 text-lg px-8 py-6"
                       >
                         Conoce nuestro equipo
                       </Button>
                     </Link>
-                    <Link to="/contacto" className="w-full sm:w-auto">
+                    <Link to="/contacto">
                       <Button
                         variant="outline"
                         size="lg"
-                        className="w-full border-2 border-white text-white hover:bg-white hover:text-[#C79F7D] text-base md:text-lg px-6 md:px-8 py-5 md:py-6"
+                        className="border-2 border-white text-white hover:bg-white hover:text-[#C79F7D] text-lg px-8 py-6"
                       >
                         Contáctanos
                       </Button>
@@ -102,24 +102,23 @@ export function Hero() {
               </div>
 
               {/* Section Categories */}
-              <div className="pb-20 md:pb-24 lg:pb-32">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4 lg:gap-6">
+              <div className="pb-8">
+                <div className="grid grid-cols-5 gap-4">
                   {sections.map((section, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
-                    className="h-full"
                   >
                     <button
                     onClick={() => scrollToSection(section.href)}
-                    className="w-full h-full text-left"
+                    className="w-full text-left"
                     >
-                    <div className="group cursor-pointer rounded-xl md:rounded-2xl border border-white/20 transition-all duration-300 h-full p-4 md:p-6 lg:p-8 bg-white/10 backdrop-blur-sm hover:bg-white/20">
-                      <section.icon className="w-6 h-6 md:w-7 md:h-7 lg:w-8 lg:h-8 text-[#C79F7D] mb-3 md:mb-4 lg:mb-6" />
-                      <h3 className="text-white font-serif text-base md:text-lg lg:text-2xl mb-1 md:mb-2 lg:mb-3">{section.title}</h3>
-                      <p className="text-white/80 text-xs md:text-sm leading-relaxed">
+                    <div className="group cursor-pointer rounded-xl border border-white/20 transition-all duration-300 p-5 bg-white/10 backdrop-blur-sm hover:bg-white/20">
+                      <section.icon className="w-7 h-7 text-[#C79F7D] mb-3" />
+                      <h3 className="text-white font-serif text-lg mb-2 line-clamp-2">{section.title}</h3>
+                      <p className="text-white/80 text-xs leading-relaxed line-clamp-2">
                       {section.description}
                       </p>
                     </div>
@@ -134,7 +133,7 @@ export function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
-                className="absolute bottom-4 md:bottom-8 left-1/2 -translate-x-1/2 text-center hidden md:flex"
+                className="absolute bottom-6 left-1/2 -translate-x-1/2 text-center"
               >
                 <button
                   onClick={() => scrollToSection('#why-us')}
