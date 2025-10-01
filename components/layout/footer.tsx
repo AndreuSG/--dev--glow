@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link
-              href={prefixPath("/")}
+              href="/"
               className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors mb-4`}
             >
               <Image src={prefixPath("/svg/Logo.svg")} alt="Logo" width={100} height={40} />
@@ -28,12 +28,21 @@ export function Footer() {
               <ul className="space-y-2">
                 {section.items.map((item) => (
                   <li key={item.label}>
-                    <a
-                      href={item.href}
-                      className="text-[#4A3F35]/80 hover:text-[#C79F7D] transition-colors"
-                    >
-                      {item.label}
-                    </a>
+                    {item.href.startsWith('/') ? (
+                      <Link
+                        href={item.href}
+                        className="text-[#4A3F35]/80 hover:text-[#C79F7D] transition-colors"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={item.href}
+                        className="text-[#4A3F35]/80 hover:text-[#C79F7D] transition-colors"
+                      >
+                        {item.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

@@ -3,10 +3,9 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star, ShoppingBag, MessageCircle, ChevronDown, Heart } from "lucide-react";
 import { Playfair_Display } from "next/font/google";
-import Link from 'next/link';
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { WhyUs } from "./why-us";
-import { prefixPath } from "@/lib/prefixPath";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -80,7 +79,7 @@ export function Hero() {
                     Glow estética avanzada
                   </h1>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <Link href={prefixPath("/equipo")}>
+                    <Link href="/equipo">
                       <Button
                         size="lg"
                         className="hidden md:inline-flex w-full sm:w-auto bg-white text-black hover:bg-white/90 text-lg px-8 py-6"
@@ -88,7 +87,7 @@ export function Hero() {
                         Conoce nuestro equipo
                       </Button>
                     </Link>
-                    <Link href={prefixPath("/contacto")}>
+                    <Link href="/contacto">
                       <Button
                         variant="outline"
                         size="lg"
