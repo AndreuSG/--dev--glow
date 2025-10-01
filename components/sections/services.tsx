@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
+import { prefixPath } from "@/lib/prefixPath";
 
 export function Services() {
   return (
@@ -20,7 +21,10 @@ export function Services() {
               Descubre nuestros tratamientos más exclusivos para cuidar tu belleza
             </p>
           </div>
-          <Link href="/servicios" className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors">
+          <Link
+            href={prefixPath("/servicios")}
+            className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
+          >
             <span className="font-medium">Ver todos los servicios</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
@@ -47,7 +51,10 @@ export function Services() {
                   <h3 className="text-xl font-semibold mb-2 text-[#4A3F35]">{service.title}</h3>
                   <p className="text-[#4A3F35]/80 mb-4">{service.description}</p>
                   <div className="flex items-center justify-between">
-                    <Link href="/contacto" className="text-[#C79F7D] font-medium hover:text-[#B68E6C] transition-colors">
+                    <Link
+                      href={prefixPath("/contacto")}
+                      className="text-[#C79F7D] font-medium hover:text-[#B68E6C] transition-colors"
+                    >
                       Consultar precio
                     </Link>
                     <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white">
@@ -60,8 +67,8 @@ export function Services() {
           ))}
         </div>
 
-        <Link 
-          href="/servicios" 
+        <Link
+          href={prefixPath("/servicios")}
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
           <span className="font-medium">Ver todos los servicios</span>

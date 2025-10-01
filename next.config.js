@@ -1,18 +1,19 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   output: 'export',
-  basePath: "/glow",
-  assetPrefix: "/glow/",
+  basePath: isProd ? '/glow' : '',
+  assetPrefix: isProd ? '/glow/' : '',
   trailingSlash: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
-  reactStrictMode: true,
-  images: {
-    unoptimized: true,
+  images: { unoptimized: true },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isProd ? '/glow' : '',
   },
-  webpack: (config, { dev }) => {
+  webpack: (config, { dev, isServer }) => {
     // Disable webpack caching in development to prevent file system issues
     if (dev) {
       config.cache = false;

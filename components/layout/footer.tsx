@@ -2,6 +2,7 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
 import Image from "next/image";
+import { prefixPath } from "@/lib/prefixPath";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -12,10 +13,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <Link
-              href="/"
+              href={prefixPath("/")}
               className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors mb-4`}
             >
-              <Image src="/svg/Logo.svg" alt="Logo" width={100} height={40} />
+              <Image src={prefixPath("/svg/Logo.svg")} alt="Logo" width={100} height={40} />
             </Link>
             <p className="text-[#4A3F35]/80">
               Tu centro de estética avanzada de confianza
