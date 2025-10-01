@@ -69,9 +69,9 @@ export function Hero() {
             }}
           >
             <div className="absolute inset-0 bg-black/40" />
-            <div className="relative h-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-between">
+            <div className="relative h-full min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
               {/* Hero Content */}
-              <div className="flex-1 flex items-center pt-32">
+              <div className="flex items-center h-[70vh] pt-20">
                 <div className="max-w-2xl text-white">
                   <h1
                     className="font-serif text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight"
@@ -101,30 +101,32 @@ export function Hero() {
                 </div>
               </div>
 
-              {/* Section Categories */}
-              <div className="pb-8">
-                <div className="grid grid-cols-5 gap-4">
-                  {sections.map((section, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                  >
-                    <button
-                    onClick={() => scrollToSection(section.href)}
-                    className="w-full text-left"
+              {/* Section Categories - Fixed at bottom */}
+              <div className="absolute bottom-20 left-0 right-0 px-4 sm:px-6 lg:px-8">
+                <div className="max-w-7xl mx-auto">
+                  <div className="grid grid-cols-5 gap-3">
+                    {sections.map((section, index) => (
+                    <motion.div
+                      key={index}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: index * 0.1 }}
                     >
-                    <div className="group cursor-pointer rounded-xl border border-white/20 transition-all duration-300 p-5 bg-white/10 backdrop-blur-sm hover:bg-white/20">
-                      <section.icon className="w-7 h-7 text-[#C79F7D] mb-3" />
-                      <h3 className="text-white font-serif text-lg mb-2 line-clamp-2">{section.title}</h3>
-                      <p className="text-white/80 text-xs leading-relaxed line-clamp-2">
-                      {section.description}
-                      </p>
-                    </div>
-                    </button>
-                  </motion.div>
-                  ))}
+                      <button
+                      onClick={() => scrollToSection(section.href)}
+                      className="w-full text-left"
+                      >
+                      <div className="group cursor-pointer rounded-lg border border-white/20 transition-all duration-300 p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20">
+                        <section.icon className="w-6 h-6 text-[#C79F7D] mb-2" />
+                        <h3 className="text-white font-serif text-base mb-1 line-clamp-1">{section.title}</h3>
+                        <p className="text-white/70 text-xs leading-snug line-clamp-2">
+                        {section.description}
+                        </p>
+                      </div>
+                      </button>
+                    </motion.div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
