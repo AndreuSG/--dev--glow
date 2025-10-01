@@ -103,8 +103,8 @@ export function Hero() {
 
               {/* Section Categories - Only visible on desktop */}
               <div className="hidden lg:block absolute bottom-16 left-0 right-0 px-8">
-                <div className="max-w-7xl mx-auto">
-                  <div className="grid grid-cols-5 gap-2.5">
+                <div className="max-w-6xl mx-auto">
+                  <div className="flex justify-center gap-3">
                     {sections.map((section, index) => (
                     <motion.div
                       key={index}
@@ -114,14 +114,11 @@ export function Hero() {
                     >
                       <button
                       onClick={() => scrollToSection(section.href)}
-                      className="w-full text-left"
+                      className="text-center"
                       >
-                      <div className="group cursor-pointer rounded-lg border border-white/30 transition-all duration-300 p-3 bg-white/15 backdrop-blur-md hover:bg-white/25 hover:border-white/50">
-                        <section.icon className="w-5 h-5 text-[#C79F7D] mb-1.5" />
-                        <h3 className="text-white font-serif text-sm font-medium mb-0.5">{section.title}</h3>
-                        <p className="text-white/60 text-[11px] leading-tight line-clamp-2">
-                        {section.description}
-                        </p>
+                      <div className="group cursor-pointer rounded-lg border border-white/30 transition-all duration-300 px-4 py-2.5 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/50 flex items-center gap-2">
+                        <section.icon className="w-4 h-4 text-[#C79F7D]" />
+                        <h3 className="text-white text-sm font-medium whitespace-nowrap">{section.title}</h3>
                       </div>
                       </button>
                     </motion.div>
