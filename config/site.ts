@@ -5,11 +5,11 @@ export const siteConfig = {
   description:
     "Centro de estética avanzada especializado en tratamientos faciales y corporales",
   mainNav: [
-    { label: "Inicio", href: prefixPath("/") },
-    { label: "Servicios", href: prefixPath("/servicios") },
-    { label: "Productos", href: prefixPath("/productos") },
-    { label: "Nuestro Equipo", href: prefixPath("/equipo") },
-    { label: "Contacto", href: prefixPath("/contacto") },
+    { label: "Inicio", href: "/" },
+    { label: "Servicios", href: "/servicios" },
+    { label: "Productos", href: "/productos" },
+    { label: "Nuestro Equipo", href: "/equipo" },
+    { label: "Contacto", href: "/contacto" },
   ],
   featuredServices: [
     {
@@ -108,7 +108,7 @@ export const siteConfig = {
       items: [
         { label: "Sobre Nosotros", href: "#" },
         { label: "Contacto", href: "#" },
-        { label: "Nuestro Equipo", href: prefixPath("/equipo") },
+        { label: "Nuestro Equipo", href: "/equipo" },
         { label: "FAQ", href: "#" },
       ],
     },

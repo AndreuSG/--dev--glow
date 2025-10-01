@@ -6,7 +6,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
-import { prefixPath } from "@/lib/prefixPath";
 
 export function Services() {
   return (
@@ -22,7 +21,7 @@ export function Services() {
             </p>
           </div>
           <Link
-            href={prefixPath("/servicios")}
+            href="/servicios"
             className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
           >
             <span className="font-medium">Ver todos los servicios</span>
@@ -52,7 +51,7 @@ export function Services() {
                   <p className="text-[#4A3F35]/80 mb-4">{service.description}</p>
                   <div className="flex items-center justify-between">
                     <Link
-                      href={prefixPath("/contacto")}
+                      href="/contacto"
                       className="text-[#C79F7D] font-medium hover:text-[#B68E6C] transition-colors"
                     >
                       Consultar precio
@@ -68,7 +67,7 @@ export function Services() {
         </div>
 
         <Link
-          href={prefixPath("/servicios")}
+          href="/servicios"
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
           <span className="font-medium">Ver todos los servicios</span>

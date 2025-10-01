@@ -3,7 +3,6 @@
 import { useKeenSlider } from "keen-slider/react";
 import Image from "next/image";
 import "keen-slider/keen-slider.min.css";
-import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
 import {
@@ -16,7 +15,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
 import { motion } from "framer-motion";
-import { prefixPath } from "@/lib/prefixPath";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -54,7 +52,7 @@ export function FeaturedProducts() {
             </p>
           </div>
           <Link
-            href={prefixPath("/productos")}
+            href="/productos"
             className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
           >
             <span className="font-medium">Ver todos los productos</span>
@@ -99,7 +97,7 @@ export function FeaturedProducts() {
                       {product.description}
                     </p>
                     <div className="flex items-center gap-8">
-                      <Link href={prefixPath("/contacto")}>
+                      <Link href="/contacto"> 
                         <Button className="bg-[#C79F7D] hover:bg-[#B68E6C] text-white px-8 py-6 text-lg">
                           <ShoppingBag className="w-5 h-5 mr-2" />
                           Consultar precio
@@ -131,7 +129,7 @@ export function FeaturedProducts() {
         </div>
 
         <Link
-          href={prefixPath("/productos")}
+          href="/productos"
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
           <span className="font-medium">Ver todos los productos</span>

@@ -8,8 +8,8 @@ import { Playfair_Display } from "next/font/google";
 import { Menu, X } from "lucide-react"; // Quitar Sparkles de aquí
 import { RiInstagramLine, RiFacebookCircleLine, RiWhatsappLine } from "react-icons/ri";
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
+import { useEffect, useMemo, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 const playfair = Playfair_Display({ subsets: ["latin"] });
 
@@ -17,13 +17,33 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
-  const normalizedBasePath =
-    basePath && basePath.endsWith('/') && basePath !== '/' ? basePath.slice(0, -1) : basePath;
-  const normalizedPathname =
-    normalizedBasePath && pathname.startsWith(normalizedBasePath)
-      ? pathname
-      : `${normalizedBasePath}${pathname}`;
+  const normalizedBasePath = useMemo(() => {
+    if (!basePath || basePath === '/') {
+      return '';
+    }
+    return basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
+  }, [basePath]);
+  const activePath = useMemo(() => {
+    const normalize = (path: string) => {
+      if (!path) {
+        return '/';
+      }
+      const prefixed = path.startsWith('/') ? path : `/${path}`;
+      if (prefixed !== '/' && prefixed.endsWith('/')) {
+        return prefixed.slice(0, -1);
+      }
+      return prefixed;
+    };
+
+    if (normalizedBasePath && pathname.startsWith(normalizedBasePath)) {
+      const trimmed = pathname.slice(normalizedBasePath.length) || '/';
+      return normalize(trimmed);
+    }
+
+    return normalize(pathname);
+  }, [normalizedBasePath, pathname]);
   const logoSrc = prefixPath("/img/logo-horizontal.png");
 
   useEffect(() => {
@@ -42,7 +62,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link
-            href={prefixPath("/")}
+            href="/"
             className={`${playfair.className} text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors`}
           >
             <Image
@@ -60,7 +80,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`nav-link text-sm font-medium ${
-                  normalizedPathname === item.href ? 'active' : ''
+                  activePath === item.href ? 'active' : ''
                 }`}
               >
                 {item.label}
@@ -88,7 +108,7 @@ export function Navbar() {
               variant="outline"
               className="ml-4 hidden md:flex hover:text-[#C79F7D] transition-colors"
               onClick={() => {
-                window.location.href = prefixPath("/contacto");
+                router.push("/contacto");
               }}
             >
               Reservar Cita
@@ -117,7 +137,7 @@ export function Navbar() {
                   key={item.href}
                   href={item.href}
                   className={`text-lg font-medium ${
-                    normalizedPathname === item.href ? 'text-[#C79F7D]' : 'text-[#4A3F35]'
+                    activePath === item.href ? 'text-[#C79F7D]' : 'text-[#4A3F35]'
                   }`}
                   onClick={() => setMobileMenuOpen(false)}
                 >

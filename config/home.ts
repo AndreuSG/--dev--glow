@@ -15,11 +15,11 @@ export const heroSection: HeroSection = {
   buttons: {
     primary: {
       text: "Conoce nuestro equipo",
-      href: prefixPath("/equipo"),
+      href: "/equipo",
     },
     secondary: {
       text: "Contáctanos",
-      href: prefixPath("/contacto"),
+      href: "/contacto",
     },
   },
   categories: [

@@ -4,7 +4,6 @@ import { siteConfig } from "@/config/site";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import { prefixPath } from "@/lib/prefixPath";
 
 export function FeaturedServices() {
   return (
@@ -50,7 +49,7 @@ export function FeaturedServices() {
                   {service.description}
                 </p>
                 <Link
-                  href={prefixPath("/contacto")}
+                  href="/contacto"
                   className="inline-flex items-center gap-2 text-[#C79F7D] font-medium hover:text-[#B68E6C] transition-colors group"
                 >
                   <span>Consultar precio</span>
