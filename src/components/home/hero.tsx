@@ -65,8 +65,8 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Section Categories - Compact pills */}
-            <div className="hidden lg:flex justify-center gap-3 flex-wrap max-w-5xl mx-auto mb-16">
+            {/* Section Categories */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto mb-12 md:mb-16 px-4">
               {heroSection.categories.map((category, index) => (
                 <motion.button
                   key={index}
@@ -74,10 +74,10 @@ export function Hero() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   onClick={() => scrollToSection(category.href)}
-                  className="rounded-lg border border-white/30 transition-all duration-300 px-5 py-2.5 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/50 flex items-center gap-2"
+                  className="rounded-xl border border-white/30 transition-all duration-300 p-4 bg-white/10 backdrop-blur-md hover:bg-white/20 hover:border-white/50 flex flex-col items-center gap-2 aspect-square justify-center"
                 >
-                  <category.icon className="w-4 h-4 text-[#C79F7D]" />
-                  <span className="text-white text-sm font-medium whitespace-nowrap">{category.title}</span>
+                  <category.icon className="w-8 h-8 md:w-10 md:h-10 text-[#C79F7D]" />
+                  <span className="text-white text-xs md:text-sm font-medium text-center">{category.title}</span>
                 </motion.button>
               ))}
             </div>
