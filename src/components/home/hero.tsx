@@ -25,7 +25,7 @@ export function Hero() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=1920)',
+          backgroundImage: 'url(https://images.pexels.com/photos/3852159/pexels-photo-3852159.jpeg?auto=compress&cs=tinysrgb&w=1920)',
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/90 to-white/95" />
@@ -90,13 +90,12 @@ export function Hero() {
             className="relative mb-16"
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/50 backdrop-blur-sm">
-              <div className="absolute inset-0 bg-[#C79F7D]/20 z-10" />
               <img
-                src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                src="https://images.pexels.com/photos/3852159/pexels-photo-3852159.jpeg?auto=compress&cs=tinysrgb&w=1200"
                 alt="Tratamiento de belleza profesional"
                 className="w-full h-[400px] sm:h-[500px] object-cover"
               />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#C79F7D]/95 to-transparent p-8 z-20">
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-8 z-20">
                 <div className="flex items-center justify-center gap-8 text-white">
                   <div className="text-center">
                     <div className="text-3xl font-bold mb-1">30+</div>
