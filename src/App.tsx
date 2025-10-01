@@ -6,7 +6,6 @@ import Servicios from './pages/Servicios';
 import Productos from './pages/Productos';
 import Equipo from './pages/Equipo';
 import Contacto from './pages/Contacto';
-import './globals.css';
 
 function App() {
   return (
