@@ -71,11 +71,11 @@ export function FeaturedProducts() {
                     transition={{ duration: 0.5 }}
                     className="w-full lg:w-1/2 flex justify-center"
                   >
-                    <div className="rounded-2xl overflow-hidden w-full max-w-[480px]">
+                    <div className="w-full max-w-[480px]">
                       <img
                         src={product.image}
                         alt={product.name}
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover rounded-2xl"
                       />
                     </div>
                   </motion.div>
