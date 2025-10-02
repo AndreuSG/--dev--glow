@@ -61,19 +61,19 @@ export const siteConfig = {
       name: "Golden Age",
       description:
         "Crema nutritiva de textura ligera formulada a base de exosomas, vitamina B12 y colágeno biomimético para aportar el cuidado global que tu piel necesita y devolverle la juventud redefiniendo los contornos de tu rostro.",
-      image: prefixPath("/img/products/golden-age2.webp"),
+      image: "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       name: "Infinity Eye Serum",
       description:
         "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
-      image: prefixPath("/img/products/eye-serum.jpg"),
+      image: "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       name: "Retinol Pro Age",
       description:
         "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
-      image: prefixPath("/img/products/retinol-pro-age.jpg"),
+      image: "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ],
   socialLinks: [
