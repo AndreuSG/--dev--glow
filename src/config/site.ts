@@ -16,21 +16,21 @@ export const siteConfig = {
       title: "Plasma Pen",
       description:
         "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
-      image: prefixPath("/img/services/plasma-pen.png"),
+      image: "https://images.pexels.com/photos/3985320/pexels-photo-3985320.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Criolipólisis",
       description:
         "Técnica de reducción de grasa localizada mediante la aplicación de frío controlado.",
       image:
-        "https://images.unsplash.com/photo-1618141397640-58d3f5ac3f5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "https://images.pexels.com/photos/3997992/pexels-photo-3997992.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       title: "Láser de Nd Yag Q-Switched",
       description:
         "Tecnología láser avanzada para eliminar manchas, tatuajes y mejorar la textura de la piel.",
       image:
-        "https://images.unsplash.com/photo-1597764692548-3a40305e7d35?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+        "https://images.pexels.com/photos/3738382/pexels-photo-3738382.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
   ],
   services: [
