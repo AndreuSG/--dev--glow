@@ -72,11 +72,13 @@ export function FeaturedProducts() {
                     className="w-full lg:w-1/2 flex justify-center"
                   >
                     <div className="w-full max-w-[480px]">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-auto object-cover rounded-2xl"
-                      />
+                      <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700 ease-out"
+                        />
+                      </div>
                     </div>
                   </motion.div>
 
