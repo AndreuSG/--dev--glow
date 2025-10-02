@@ -152,7 +152,8 @@ export function Hero() {
         >
           <button
             onClick={() => scrollToSection("#why-us")}
-            className="text-gray-500 hover:text-[#C79F7D] flex flex-col items-center gap-2 animate-bounce transition-colors duration-300"
+            className="text-gray-500 hover:text-[#C79F7D] flex flex-col items-center gap-2 transition-colors duration-300"
+            style={{ animation: 'bounce 2s infinite' }}
           >
             <span className="text-sm font-medium">Descubre más</span>
             <ChevronDown className="w-5 h-5" />
