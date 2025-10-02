@@ -74,14 +74,24 @@ export function Hero() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 pt-6">
+            <div className="flex items-center gap-8 pt-6">
               <div className="space-y-1">
                 <div className="text-3xl font-bold text-gray-900">30+</div>
                 <div className="text-sm text-gray-600">Años de experiencia</div>
               </div>
-              <div className="space-y-1">
-                <div className="text-3xl font-bold text-gray-900">4.9/5</div>
-                <div className="text-sm text-gray-600">Valoración media</div>
+
+              <div className="bg-white rounded-2xl px-6 py-3 shadow-lg border border-gray-100">
+                <div className="flex items-center gap-4">
+                  <div className="flex -space-x-3">
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#C79F7D] to-[#B68E6C] border-2 border-white"></div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#B68E6C] to-[#A67D5B] border-2 border-white"></div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#A67D5B] to-[#956C4A] border-2 border-white"></div>
+                  </div>
+                  <div>
+                    <div className="text-2xl font-bold text-gray-900">4.9/5</div>
+                    <div className="text-xs text-gray-600">Valoración media</div>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -127,20 +137,6 @@ export function Hero() {
                       alt="Tratamiento premium"
                       className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                  </div>
-                </div>
-              </div>
-
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-8 py-4 shadow-2xl border border-gray-100">
-                <div className="flex items-center gap-6">
-                  <div className="flex -space-x-3">
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#C79F7D] to-[#B68E6C] border-2 border-white"></div>
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#B68E6C] to-[#A67D5B] border-2 border-white"></div>
-                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#A67D5B] to-[#956C4A] border-2 border-white"></div>
-                  </div>
-                  <div>
-                    <div className="text-2xl font-bold text-gray-900">4.9/5</div>
-                    <div className="text-sm text-gray-600">Valoración media</div>
                   </div>
                 </div>
               </div>
