@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative h-[70vh] overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Tratamiento de bienestar"
+          src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Tratamiento facial"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      <div className="relative min-h-screen flex items-center justify-center px-4">
+      <div className="relative h-[70vh] flex items-center justify-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
