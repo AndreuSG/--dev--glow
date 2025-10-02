@@ -74,18 +74,14 @@ export function Hero() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 pt-6">
+            <div className="grid grid-cols-2 gap-8 pt-6">
               <div className="space-y-1">
                 <div className="text-3xl font-bold text-gray-900">30+</div>
                 <div className="text-sm text-gray-600">Años de experiencia</div>
               </div>
               <div className="space-y-1">
-                <div className="text-3xl font-bold text-gray-900">15k+</div>
-                <div className="text-sm text-gray-600">Clientes felices</div>
-              </div>
-              <div className="space-y-1">
-                <div className="text-3xl font-bold text-gray-900">98%</div>
-                <div className="text-sm text-gray-600">Satisfacción</div>
+                <div className="text-3xl font-bold text-gray-900">4.9/5</div>
+                <div className="text-sm text-gray-600">Valoración media</div>
               </div>
             </div>
           </motion.div>
