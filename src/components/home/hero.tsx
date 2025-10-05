@@ -9,7 +9,8 @@ export function Hero() {
         <img
           src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920"
           alt="Tratamiento facial"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
+          style={{ objectPosition: 'center 40%' }}
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
