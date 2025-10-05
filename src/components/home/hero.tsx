@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative h-[70vh] overflow-hidden">
+    <section className="relative h-[85vh] overflow-hidden">
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920"
@@ -14,7 +14,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
-      <div className="relative h-[70vh] flex items-center justify-center px-4">
+      <div className="relative h-[85vh] flex items-center justify-center px-4 pt-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
