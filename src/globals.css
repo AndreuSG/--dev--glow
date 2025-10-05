@@ -32,19 +32,42 @@
     --radius: 0.75rem;
     --golden: 199, 159, 125;
   }
-}
 
-@layer base {
+  html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
   * {
     @apply border-border;
+    -webkit-tap-highlight-color: transparent;
   }
+
   body {
     @apply bg-[#F5EDE4] text-[#4A3F35];
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    font-size: 16px;
+  }
+
+  #root {
+    overflow-x: hidden;
+    position: relative;
   }
 }
 
 .embla {
   overflow: hidden;
+  touch-action: pan-y pinch-zoom;
 }
 
 .embla__container {
@@ -56,16 +79,19 @@
   min-width: 0;
 }
 
-/* Animaciones suaves para hover */
 @layer utilities {
   .transition-all {
     transition-property: all;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
   }
-  
+
   .hover\:scale-105:hover {
     transform: scale(1.05);
+  }
+
+  .prevent-zoom {
+    touch-action: manipulation;
   }
 }
 
