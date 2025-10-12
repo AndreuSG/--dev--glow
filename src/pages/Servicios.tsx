@@ -22,17 +22,33 @@ export default function ServiciosPage() {
 
   return (
     <div className="min-h-screen bg-[#F5EDE4]">
-      <div className="pt-24">
-        <div className="max-w-7xl mx-auto px-4 py-4 sticky top-[72px] bg-[#F5EDE4] z-40">
-          <div role="tablist" className="flex justify-center gap-6">
+      <div className="pt-32 pb-12 px-4">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto text-center mb-12"
+        >
+          <h1 className="text-6xl md:text-7xl font-serif text-[#4A3F35] mb-6">
+            Nuestros Servicios
+          </h1>
+          <p className="text-xl text-[#4A3F35]/70 leading-relaxed">
+            Descubre tratamientos personalizados diseñados para realzar tu belleza natural
+          </p>
+        </motion.div>
+
+        <div className="max-w-3xl mx-auto sticky top-[72px] bg-[#F5EDE4]/95 backdrop-blur-sm z-40 py-6">
+          <div className="flex justify-center gap-3">
             {['facial', 'corporal', 'masajes'].map((category) => (
-              <button
+              <motion.button
                 key={category}
                 onClick={() => scrollToSection(category)}
-                className="px-6 py-2 text-lg font-semibold tracking-[.03em] rounded-full transition-all duration-250 ease-in-out bg-transparent border border-[#AE8871] text-[#AE8871] hover:bg-[#AE8871] hover:text-white"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-3 text-base font-medium rounded-full transition-all duration-300 bg-white border-2 border-[#C79F7D] text-[#C79F7D] hover:bg-[#C79F7D] hover:text-white shadow-md hover:shadow-lg"
               >
                 {category.charAt(0).toUpperCase() + category.slice(1)}
-              </button>
+              </motion.button>
             ))}
           </div>
         </div>
@@ -43,12 +59,23 @@ export default function ServiciosPage() {
         return (
         <section key={key} id={key} className={`py-20 px-4 diagonal-top diagonal-bottom relative ${bgColor}`}>
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
-              Tratamientos {category.name}es
-            </h2>
-            <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed mb-16">
-              {category.description}
-            </p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-16"
+            >
+              <span className="inline-block bg-[#C79F7D]/10 text-[#C79F7D] text-sm font-semibold px-4 py-2 rounded-full mb-6">
+                {category.name.toUpperCase()}
+              </span>
+              <h2 className="font-serif text-5xl md:text-6xl text-[#4A3F35] mb-6">
+                Tratamientos {category.name}es
+              </h2>
+              <p className="text-xl text-[#4A3F35]/70 max-w-3xl mx-auto leading-relaxed">
+                {category.description}
+              </p>
+            </motion.div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {category.services.map((service, index) => (
