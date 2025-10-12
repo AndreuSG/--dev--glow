@@ -64,7 +64,7 @@ export default function ProductosPage() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow flex flex-col h-full"
                 >
-                  <div className="relative aspect-square">
+                  <div className="relative h-80 w-full">
                     <img
                       src={product.image}
                       alt={product.name}
