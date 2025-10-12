@@ -13,10 +13,10 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-16">
           <div>
-            <h2 className="text-4xl font-serif text-[#4A3F35] mb-4">
+            <h2 className="text-5xl font-serif text-[#4A3F35] mb-4">
               Servicios Destacados
             </h2>
-            <p className="text-[#4A3F35]/80 max-w-2xl">
+            <p className="text-lg text-[#4A3F35]/80 max-w-2xl">
               Descubre nuestros tratamientos más exclusivos para cuidar tu belleza
             </p>
           </div>
@@ -47,8 +47,8 @@ export function Services() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-[#4A3F35]">{service.title}</h3>
-                  <p className="text-[#4A3F35]/80 mb-4">{service.description}</p>
+                  <h3 className="text-2xl font-semibold mb-2 text-[#4A3F35]">{service.title}</h3>
+                  <p className="text-base text-[#4A3F35]/80 mb-4">{service.description}</p>
                   <div className="flex items-center justify-between">
                     <Link
                       href="/contacto"

@@ -34,8 +34,8 @@ export function WhyUs() {
     <section className="py-32 px-4 bg-[#F7F3EE]">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className={`${"font-serif"} text-4xl text-[#4A3F35] mb-4`}>¿Por qué elegirnos?</h2>
-          <p className="text-[#4A3F35]/80 max-w-2xl mx-auto">
+          <h2 className={`${"font-serif"} text-5xl text-[#4A3F35] mb-4`}>¿Por qué elegirnos?</h2>
+          <p className="text-lg text-[#4A3F35]/80 max-w-2xl mx-auto">
             Descubre por qué somos tu mejor opción para cuidar tu belleza y bienestar
           </p>
         </div>
@@ -56,7 +56,7 @@ export function WhyUs() {
                 <h3 className={`${"font-serif"} text-2xl text-[#4A3F35] mb-4`}>
                   {reason.title}
                 </h3>
-                <p className="text-[#4A3F35]/80 leading-relaxed">
+                <p className="text-base text-[#4A3F35]/80 leading-relaxed">
                   {reason.description}
                 </p>
               </div>

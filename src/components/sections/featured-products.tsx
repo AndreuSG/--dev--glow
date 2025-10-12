@@ -42,11 +42,11 @@ export function FeaturedProducts() {
         <div className="flex items-center justify-between mb-16">
           <div>
             <h2
-              className="font-serif text-4xl text-[#4A3F35] mb-4"
+              className="font-serif text-5xl text-[#4A3F35] mb-4"
             >
               Productos Destacados
             </h2>
-            <p className="text-[#4A3F35]/80 max-w-2xl">
+            <p className="text-lg text-[#4A3F35]/80 max-w-2xl">
               Descubre nuestra línea profesional TOSKANI para el cuidado de tu
               piel
             </p>
@@ -93,7 +93,7 @@ export function FeaturedProducts() {
                     >
                       {product.name}
                     </h3>
-                    <p className="text-lg text-[#4A3F35]/80 leading-relaxed mb-8">
+                    <p className="text-xl text-[#4A3F35]/80 leading-relaxed mb-8">
                       {product.description}
                     </p>
                     <div className="flex items-center gap-8">

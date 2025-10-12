@@ -59,10 +59,10 @@ export function Testimonials() {
   return (
     <section className="py-20 bg-[#F7F3EE] diagonal-top diagonal-bottom relative">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-4xl font-serif text-center mb-4 text-[#4A3F35]">
+        <h2 className="text-5xl font-serif text-center mb-4 text-[#4A3F35]">
           Lo que opinan nuestros clientes
         </h2>
-        <p className="text-center text-[#4A3F35]/80 mb-16 max-w-2xl mx-auto">
+        <p className="text-lg text-center text-[#4A3F35]/80 mb-16 max-w-2xl mx-auto">
           Descubre por qué nuestros clientes confían en nosotros para cuidar su belleza
         </p>
         <div className="relative px-12">
@@ -78,7 +78,7 @@ export function Testimonials() {
                       />
                     ))}
                   </div>
-                  <p className="mb-6 text-[#4A3F35]/80 leading-relaxed">
+                  <p className="mb-6 text-base text-[#4A3F35]/80 leading-relaxed">
                     {testimonial.content}
                   </p>
                   <p className="font-semibold text-[#4A3F35]">

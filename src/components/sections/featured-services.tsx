@@ -9,10 +9,10 @@ export function FeaturedServices() {
   return (
     <section className="py-20 px-4 bg-[#F5EDE4] diagonal-top diagonal-bottom relative">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-serif text-center mb-4 text-[#4A3F35]">
+        <h2 className="text-5xl font-serif text-center mb-4 text-[#4A3F35]">
           Novedades
         </h2>
-        <p className="text-center text-[#4A3F35]/80 mb-16 max-w-2xl mx-auto">
+        <p className="text-lg text-center text-[#4A3F35]/80 mb-16 max-w-2xl mx-auto">
           Descubre nuestros tratamientos más innovadores con resultados probados
         </p>
 
@@ -42,10 +42,10 @@ export function FeaturedServices() {
                 <span className="inline-block bg-[#C79F7D]/10 text-[#C79F7D] text-sm font-medium px-4 py-2 rounded-full mb-4">
                   Nuevo tratamiento
                 </span>
-                <h3 className="text-3xl font-serif text-[#4A3F35] mb-4">
+                <h3 className="text-4xl font-serif text-[#4A3F35] mb-4">
                   {service.title}
                 </h3>
-                <p className="text-[#4A3F35]/70 text-lg leading-relaxed mb-6">
+                <p className="text-[#4A3F35]/70 text-xl leading-relaxed mb-6">
                   {service.description}
                 </p>
                 <Link

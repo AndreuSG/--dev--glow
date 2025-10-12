@@ -13,7 +13,7 @@ export function InstagramFeed() {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-16">
           <Instagram className="w-6 h-6 text-[#4A3F35]" />
-          <h2 className="text-4xl font-serif text-center text-[#4A3F35]">Síguenos en Instagram</h2>
+          <h2 className="text-5xl font-serif text-center text-[#4A3F35]">Síguenos en Instagram</h2>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {instagramPosts.map((post, index) => (
