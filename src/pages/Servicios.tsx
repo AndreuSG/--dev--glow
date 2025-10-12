@@ -38,20 +38,18 @@ export default function ServiciosPage() {
         </div>
       </div>
 
-      {Object.entries(serviceCategories).map(([key, category]) => (
-        <section key={key} id={key} className="py-16">
-          <div className="bg-[#E5D5C5] py-20 px-4 diagonal-top diagonal-bottom relative">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
-                Tratamientos {category.name}es
-              </h2>
-              <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed">
-                {category.description}
-              </p>
-            </div>
-          </div>
+      {Object.entries(serviceCategories).map(([key, category], sectionIndex) => {
+        const bgColor = sectionIndex % 2 === 0 ? 'bg-[#F5EDE4]' : 'bg-[#E5D5C5]';
+        return (
+        <section key={key} id={key} className={`py-20 px-4 diagonal-top diagonal-bottom relative ${bgColor}`}>
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
+              Tratamientos {category.name}es
+            </h2>
+            <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed mb-16">
+              {category.description}
+            </p>
 
-          <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {category.services.map((service, index) => (
                 <motion.div
@@ -96,7 +94,8 @@ export default function ServiciosPage() {
             </div>
           </div>
         </section>
-      ))}
+        );
+      })}
     </div>
   );
 }

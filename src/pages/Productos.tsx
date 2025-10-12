@@ -40,20 +40,18 @@ export default function ProductosPage() {
         </div>
       </div>
 
-      {Object.entries(productBrands).map(([key, brand]) => (
-        <section key={key} id={key} className="py-16">
-          <div className="bg-[#E5D5C5] py-20 px-4 diagonal-top diagonal-bottom relative">
-            <div className="max-w-7xl mx-auto">
-              <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
-                {brand.name}
-              </h2>
-              <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed">
-                {brand.description}
-              </p>
-            </div>
-          </div>
+      {Object.entries(productBrands).map(([key, brand], sectionIndex) => {
+        const bgColor = sectionIndex % 2 === 0 ? 'bg-[#F5EDE4]' : 'bg-[#E5D5C5]';
+        return (
+        <section key={key} id={key} className={`py-20 px-4 diagonal-top diagonal-bottom relative ${bgColor}`}>
+          <div className="max-w-7xl mx-auto">
+            <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
+              {brand.name}
+            </h2>
+            <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed mb-16">
+              {brand.description}
+            </p>
 
-          <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {brand.products.map((product, index) => (
                 <motion.div
@@ -90,7 +88,8 @@ export default function ProductosPage() {
             </div>
           </div>
         </section>
-      ))}
+        );
+      })}
     </div>
   );
 }
