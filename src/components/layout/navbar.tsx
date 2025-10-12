@@ -44,7 +44,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`nav-link text-sm font-medium ${
+                className={`nav-link text-base font-medium ${
                   activePath === item.href ? 'active' : ''
                 }`}
               >
