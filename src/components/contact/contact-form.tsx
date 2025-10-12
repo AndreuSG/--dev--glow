@@ -13,7 +13,7 @@ export function ContactForm() {
       transition={{ duration: 0.5, delay: 0.4 }}
     >
       <Card className="p-8 bg-white/50 backdrop-blur-sm border-0">
-        <h2 className="text-2xl font-serif text-[#4A3F35] mb-6">Envíanos un mensaje</h2>
+        <h2 className="text-3xl font-serif text-[#4A3F35] mb-6">Envíanos un mensaje</h2>
         <form className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>

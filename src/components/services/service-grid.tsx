@@ -34,12 +34,12 @@ export function ServiceGrid({ services }: ServiceGridProps) {
                 <h3 className="text-2xl font-serif text-[#4A3F35] mb-4">
                   {service.title}
                 </h3>
-                <p className="text-[#4A3F35]/80 leading-relaxed mb-6">
+                <p className="text-base text-[#4A3F35]/80 leading-relaxed mb-6">
                   {service.description}
                 </p>
                 <div className="flex items-center gap-4 mb-6">
                   <Calendar className="w-5 h-5 text-[#C79F7D]" />
-                  <span className="text-[#4A3F35]/80">{service.duration}</span>
+                  <span className="text-base text-[#4A3F35]/80">{service.duration}</span>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-medium text-[#C79F7D]">

@@ -16,8 +16,8 @@ export default function ContactoPage() {
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center text-center">
           <div className="max-w-3xl px-4">
-            <h1 className="text-4xl md:text-5xl font-serif text-white mb-4">Contacta con nosotros</h1>
-            <p className="text-lg text-white">Estamos aquí para ayudarte a conseguir los resultados que deseas</p>
+            <h1 className="text-5xl md:text-6xl font-serif text-white mb-4">Contacta con nosotros</h1>
+            <p className="text-xl text-white">Estamos aquí para ayudarte a conseguir los resultados que deseas</p>
           </div>
         </div>
       </div>

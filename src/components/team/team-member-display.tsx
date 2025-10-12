@@ -38,12 +38,12 @@ export function TeamMemberDisplay({ member }: TeamMemberDisplayProps) {
               <Sparkles className="w-5 h-5 text-[#C79F7D]" />
               <span className="text-[#C79F7D] font-medium">Nuestros expertos</span>
             </div>
-            <h2 className="text-4xl font-serif text-[#4A3F35] mb-4">{member.name}</h2>
-            <h3 className="text-xl font-medium text-[#C79F7D] mb-6">{member.role}</h3>
-            <p className="text-[#4A3F35]/80 text-lg leading-relaxed mb-8">{member.description}</p>
+            <h2 className="text-5xl font-serif text-[#4A3F35] mb-4">{member.name}</h2>
+            <h3 className="text-2xl font-medium text-[#C79F7D] mb-6">{member.role}</h3>
+            <p className="text-[#4A3F35]/80 text-xl leading-relaxed mb-8">{member.description}</p>
             
             <div className="space-y-2">
-              <h4 className="font-medium text-[#4A3F35] mb-4">Especialidades:</h4>
+              <h4 className="text-lg font-medium text-[#4A3F35] mb-4">Especialidades:</h4>
               <div className="flex flex-wrap gap-2">
                 {member.specialties.map((specialty, idx) => (
                   <span 

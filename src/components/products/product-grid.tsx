@@ -36,7 +36,7 @@ export function ProductGrid({ products }: ProductGridProps) {
                 <h3 className={`${"font-serif"} text-2xl text-[#4A3F35] mb-4`}>
                   {product.name}
                 </h3>
-                <p className="text-[#4A3F35]/80 leading-relaxed mb-6 flex-grow">
+                <p className="text-base text-[#4A3F35]/80 leading-relaxed mb-6 flex-grow">
                   {product.description}
                 </p>
                 <div className="flex items-center justify-between mt-auto">

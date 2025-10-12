@@ -22,7 +22,7 @@ export function ContactInfoCard({ info, index }: ContactInfoCardProps) {
         <h3 className="text-lg font-medium text-[#4A3F35]">{info.title}</h3>
       </div>
       {info.details.map((detail, idx) => (
-        <p key={idx} className="text-[#4A3F35]/80 break-words overflow-wrap-anywhere">
+        <p key={idx} className="text-base text-[#4A3F35]/80 break-words overflow-wrap-anywhere">
           {detail}
         </p>
       ))}
