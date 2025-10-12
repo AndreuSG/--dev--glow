@@ -4,7 +4,7 @@ import { Phone, Clock, Mail, MapPin } from "lucide-react";
 
 export function Contact() {
   return (
-    <section className="py-20 px-4 bg-[#F7F3EE] diagonal-top relative">
+    <section className="py-20 px-4 bg-[#F7F3EE]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
         <div className="flex-1">
           <h2 className="text-5xl font-serif mb-6 text-[#4A3F35]">Contacta con nosotros</h2>

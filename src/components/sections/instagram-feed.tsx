@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 export function InstagramFeed() {
   return (
-    <section className="py-20 px-4 bg-[#F5EDE4] diagonal-top diagonal-bottom relative">
+    <section className="py-20 px-4 bg-[#F5EDE4]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-center gap-2 mb-16">
           <Instagram className="w-6 h-6 text-[#4A3F35]" />

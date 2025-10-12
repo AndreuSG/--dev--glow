@@ -57,7 +57,7 @@ export function Testimonials() {
   });
 
   return (
-    <section className="py-20 bg-[#F7F3EE] diagonal-top diagonal-bottom relative">
+    <section className="py-20 bg-[#F7F3EE]">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-5xl font-serif text-center mb-4 text-[#4A3F35]">
           Lo que opinan nuestros clientes

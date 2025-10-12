@@ -37,7 +37,7 @@ export function FeaturedProducts() {
   });
 
   return (
-    <section className="py-20 px-4 bg-[#F5EDE4] diagonal-top diagonal-bottom relative">
+    <section className="py-20 px-4 bg-[#F5EDE4]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-16">
           <div>

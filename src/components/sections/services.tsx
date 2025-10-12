@@ -9,7 +9,7 @@ import { siteConfig } from "../../config/site";
 
 export function Services() {
   return (
-    <section className="py-20 px-4 bg-[#F7F3EE] diagonal-top diagonal-bottom relative">
+    <section className="py-20 px-4 bg-[#F7F3EE]">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center justify-between mb-16">
           <div>

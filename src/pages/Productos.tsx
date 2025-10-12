@@ -38,7 +38,7 @@ export default function ProductosPage() {
       {Object.entries(productBrands).map(([key, brand], sectionIndex) => {
         const bgColor = sectionIndex % 2 === 0 ? 'bg-[#F5EDE4]' : 'bg-[#F7F3EE]';
         return (
-        <section key={key} id={key} className={`py-20 px-4 diagonal-top diagonal-bottom relative ${bgColor}`}>
+        <section key={key} id={key} className={`py-20 px-4 ${bgColor}`}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl text-[#4A3F35] mb-6">
               {brand.name}
