@@ -40,8 +40,8 @@ export default function ServiciosPage() {
 
       {Object.entries(serviceCategories).map(([key, category]) => (
         <section key={key} id={key} className="py-16">
-          <div className="bg-[#E5D5C5] py-16 mb-16">
-            <div className="max-w-7xl mx-auto px-4">
+          <div className="bg-[#E5D5C5] py-20 px-4 diagonal-top diagonal-bottom relative">
+            <div className="max-w-7xl mx-auto">
               <h2 className="font-serif text-5xl text-[#4A3F35] mb-6">
                 Tratamientos {category.name}es
               </h2>
