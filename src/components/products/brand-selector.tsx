@@ -48,7 +48,7 @@ export function BrandSelector({ currentBrand, onBrandChange, brandDescription }:
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex items-center gap-4 mb-6">
             <Sparkles className="w-6 h-6 text-[#AE8871]" />
-            <h2 className={`${"font-serif"} text-5xl text-[#4A3F35]`}>{currentBrand.toUpperCase()}</h2>
+            <h2 className={`${"font-serif"} text-5xl text-[#4A3F35]`}>{currentBrand.charAt(0).toUpperCase() + currentBrand.slice(1)}</h2>
           </div>
           <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed">
             {brandDescription}
