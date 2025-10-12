@@ -44,7 +44,7 @@ export function FeaturedProducts() {
             <h2
               className="font-serif text-5xl text-[#4A3F35] mb-4"
             >
-              Productos Destacados
+              Productos destacados
             </h2>
             <p className="text-lg text-[#4A3F35]/80 max-w-2xl">
               Descubre nuestra línea profesional TOSKANI para el cuidado de tu

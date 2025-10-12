@@ -8,7 +8,7 @@ export const siteConfig = {
     { label: "Inicio", href: "/" },
     { label: "Servicios", href: "/servicios" },
     { label: "Productos", href: "/productos" },
-    { label: "Nuestro Equipo", href: "/equipo" },
+    { label: "Nuestro equipo", href: "/equipo" },
     { label: "Contacto", href: "/contacto" },
   ],
   featuredServices: [
@@ -108,7 +108,7 @@ export const siteConfig = {
       items: [
         { label: "Sobre Nosotros", href: "#" },
         { label: "Contacto", href: "#" },
-        { label: "Nuestro Equipo", href: "/equipo" },
+        { label: "Nuestro equipo", href: "/equipo" },
         { label: "FAQ", href: "#" },
       ],
     },

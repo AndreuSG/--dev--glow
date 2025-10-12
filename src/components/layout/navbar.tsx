@@ -77,7 +77,7 @@ export function Navbar() {
                 navigate("/contacto");
               }}
             >
-              Reservar Cita
+              Reservar cita
             </Button>
           </div>
 
@@ -134,7 +134,7 @@ export function Navbar() {
                   setMobileMenuOpen(false);
                 }}
               >
-                Reservar Cita
+                Reservar cita
               </Button>
             </div>
           </div>

@@ -14,7 +14,7 @@ export function Services() {
         <div className="flex items-center justify-between mb-16">
           <div>
             <h2 className="text-5xl font-serif text-[#4A3F35] mb-4">
-              Servicios Destacados
+              Servicios destacados
             </h2>
             <p className="text-lg text-[#4A3F35]/80 max-w-2xl">
               Descubre nuestros tratamientos más exclusivos para cuidar tu belleza

@@ -13,7 +13,7 @@ export const serviceCategories: Record<string, ServiceCategory> = {
         price: "Desde 89€"
       },
       {
-        title: "Carbon Peeling",
+        title: "Carbon peeling",
         description: "Técnica enfocada en la eliminación de imperfecciones y mejoría de la salud cutánea",
         image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80",
         duration: "45 min",
@@ -60,21 +60,21 @@ export const serviceCategories: Record<string, ServiceCategory> = {
     description: "Nuestros masajes terapéuticos combinan diferentes técnicas para proporcionar una experiencia única de relajación y bienestar. Cada sesión está personalizada para abordar tus necesidades específicas y ayudarte a recuperar el equilibrio físico y mental.",
     services: [
       {
-        title: "Masaje Relajante",
+        title: "Masaje relajante",
         description: "Técnica de masaje que ayuda a reducir el estrés y la tensión muscular",
         image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80",
         duration: "60 min",
         price: "Desde 65€"
       },
       {
-        title: "Masaje Descontracturante",
+        title: "Masaje descontracturante",
         description: "Masaje terapéutico enfocado en eliminar contracturas y nudos musculares",
         image: "https://images.unsplash.com/photo-1519823551278-64ac92734fb1?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80",
         duration: "45 min",
         price: "Desde 75€"
       },
       {
-        title: "Masaje Energético",
+        title: "Masaje energético",
         description: "Técnica que equilibra la energía corporal y promueve el bienestar general",
         image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80",
         duration: "50 min",

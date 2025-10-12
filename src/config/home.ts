@@ -36,13 +36,13 @@ export const heroSection: HeroSection = {
       href: "#novedades",
     },
     {
-      title: "Servicios Destacados",
+      title: "Servicios destacados",
       description: "Tratamientos exclusivos para tu belleza",
       icon: "Star",
       href: "#servicios",
     },
     {
-      title: "Nuestros Productos",
+      title: "Nuestros productos",
       description: "Línea profesional TOSKANI y CASMARA",
       icon: "ShoppingBag",
       href: "#productos",
