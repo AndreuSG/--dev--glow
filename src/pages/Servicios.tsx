@@ -41,7 +41,7 @@ export default function ServiciosPage() {
         <section key={key} id={key} className={`py-20 px-4 ${bgColor}`}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-5xl text-[#4A3F35] mb-6">
-              Tratamientos {category.name}es
+              Tratamientos {category.name.toLowerCase()}es
             </h2>
             <p className="text-xl text-[#4A3F35]/80 max-w-3xl leading-relaxed mb-16">
               {category.description}
