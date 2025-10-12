@@ -36,7 +36,7 @@ export const heroSection: HeroSection = {
       href: "#novedades",
     },
     {
-      title: "Servicios destacados",
+      title: "Tratamientos destacados",
       description: "Tratamientos exclusivos para tu belleza",
       icon: "Star",
       href: "#servicios",

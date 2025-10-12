@@ -11,7 +11,7 @@ export default function ServiciosPage() {
         <div className="absolute inset-0">
           <img
             src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Nuestros servicios"
+            alt="Nuestros tratamientos"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40"></div>
@@ -25,7 +25,7 @@ export default function ServiciosPage() {
             className="text-center max-w-3xl mx-auto space-y-8"
           >
             <h1 className="text-5xl sm:text-6xl lg:text-7xl leading-tight text-white">
-              Nuestros servicios
+              Nuestros tratamientos
             </h1>
 
             <p className="text-xl sm:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">

@@ -6,7 +6,7 @@ export const siteConfig = {
     "Centro de estética avanzada especializado en tratamientos faciales y corporales",
   mainNav: [
     { label: "Inicio", href: "/" },
-    { label: "Servicios", href: "/servicios" },
+    { label: "Tratamientos", href: "/servicios" },
     { label: "Productos", href: "/productos" },
     { label: "Nuestro equipo", href: "/equipo" },
     { label: "Contacto", href: "/contacto" },
@@ -95,18 +95,18 @@ export const siteConfig = {
   ],
   footerSections: [
     {
-      title: "Servicios",
+      title: "Tratamientos",
       items: [
-        { label: "Tratamientos Faciales", href: "#" },
-        { label: "Tratamientos Corporales", href: "#" },
-        { label: "Depilación Láser", href: "#" },
-        { label: "Medicina Estética", href: "#" },
+        { label: "Tratamientos faciales", href: "#" },
+        { label: "Tratamientos corporales", href: "#" },
+        { label: "Depilación láser", href: "#" },
+        { label: "Medicina estética", href: "#" },
       ],
     },
     {
       title: "Información",
       items: [
-        { label: "Sobre Nosotros", href: "#" },
+        { label: "Sobre nosotros", href: "#" },
         { label: "Contacto", href: "#" },
         { label: "Nuestro equipo", href: "/equipo" },
         { label: "FAQ", href: "#" },

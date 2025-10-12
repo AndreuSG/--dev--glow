@@ -14,7 +14,7 @@ export function Services() {
         <div className="flex items-center justify-between mb-16">
           <div>
             <h2 className="text-5xl font-serif text-[#4A3F35] mb-4">
-              Servicios destacados
+              Tratamientos destacados
             </h2>
             <p className="text-lg text-[#4A3F35]/80 max-w-2xl">
               Descubre nuestros tratamientos más exclusivos para cuidar tu belleza
@@ -24,7 +24,7 @@ export function Services() {
             href="/servicios"
             className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
           >
-            <span className="font-medium">Ver todos los servicios</span>
+            <span className="font-medium">Ver todos los tratamientos</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
@@ -70,7 +70,7 @@ export function Services() {
           href="/servicios"
           className="mt-8 flex md:hidden items-center justify-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
         >
-          <span className="font-medium">Ver todos los servicios</span>
+          <span className="font-medium">Ver todos los tratamientos</span>
           <ArrowRight className="w-5 h-5" />
         </Link>
       </div>
