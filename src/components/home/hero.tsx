@@ -32,7 +32,7 @@ export function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Link to="/servicios">
+            <Link to="/tratamientos">
               <Button
                 size="lg"
                 className="bg-[#C79F7D] text-white hover:bg-[#B68E6C] transition-all duration-300 px-8 py-6 rounded-full text-base shadow-lg hover:shadow-xl hover:scale-105 w-full sm:w-auto"

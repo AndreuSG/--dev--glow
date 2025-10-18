@@ -34,8 +34,7 @@ export function Navbar() {
             <img
               src={logoSrc}
               alt="Logo"
-              
-              height="auto"
+              className="h-24 md:h-14 lg:h-24 object-contain"
             />
           </Link>
           

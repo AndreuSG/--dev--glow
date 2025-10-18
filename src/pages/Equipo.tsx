@@ -13,11 +13,11 @@ export default function EquipoPage() {
       <section className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1920"
+            src="/img/team/dddd.jpg"
             alt="Nuestro equipo"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         <div className="relative h-[70vh] flex items-center justify-center px-4">
@@ -59,7 +59,7 @@ export default function EquipoPage() {
                     <img
                       src={memberData.member.image}
                       alt={memberData.member.name}
-                      className="w-full h-full object-cover rounded-2xl"
+                      className="w-full h-full object-cover rounded-2xl object-top"
                     />
                   </div>
                   <div

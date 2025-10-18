@@ -11,11 +11,11 @@ export default function ContactoPage() {
       <section className="relative h-[70vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+            src="/img/nuestro-equipo.jpg"
             alt="Contacto"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
+          <div className="absolute inset-0 bg-black/20"></div>
         </div>
 
         <div className="relative h-[70vh] flex items-center justify-center px-4">

@@ -21,7 +21,7 @@ export function Services() {
             </p>
           </div>
           <Link
-            href="/servicios"
+            href="/tratamientos"
             className="hidden md:flex items-center gap-2 text-[#C79F7D] hover:text-[#B68E6C] transition-colors"
           >
             <span className="font-medium">Ver todos los tratamientos</span>

@@ -12,7 +12,7 @@ export function Footer() {
               to="/"
               className="font-serif text-2xl flex items-center gap-2 hover:text-[#C79F7D] transition-colors mb-4"
             >
-              <img src={prefixPath("/svg/Logo.svg")} alt="Logo"  height="auto" />
+              <img src={prefixPath("/img/logo-horizontal.png")} alt="Logo"  height="auto" />
             </Link>
             <p className="text-[#4A3F35]/80">
               Tu centro de estética avanzada de confianza
