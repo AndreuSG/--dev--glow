@@ -10,7 +10,7 @@ export const teamMembers: Record<string, { member: TeamMember; description: stri
       role: "Directora y Especialista en Estética Avanzada",
       description:
         "Con más de 15 años de experiencia en el sector de la estética avanzada. Especialista certificada en Plasma Pen y técnicas de rejuvenecimiento no invasivo. Su pasión por la belleza y el bienestar la ha llevado a formarse continuamente en las últimas tecnologías del sector.",
-      image: prefixPath("/img/team/rosa1.jpg"),
+      image: "/img/team/rosa1.jpg",
       specialties: [
         "Plasma Pen",
         "Rejuvenecimiento facial",
@@ -27,7 +27,7 @@ export const teamMembers: Record<string, { member: TeamMember; description: stri
       role: "Especialista en Tratamientos Faciales y Corporales",
       description:
         "Experta en tratamientos faciales y corporales con más de 10 años de experiencia. Especializada en técnicas de última generación para el cuidado de la piel. Su enfoque personalizado y atención al detalle garantizan resultados excepcionales para cada cliente.",
-      image: prefixPath("/img/team/claudia1.jpg"),
+      image: "/img/team/claudia1.jpg",
       specialties: [
         "Tratamientos faciales",
         "Tratamientos corporales",

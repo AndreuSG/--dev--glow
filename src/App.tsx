@@ -20,7 +20,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.PROD ? '/glow' : ''}>
+    <BrowserRouter>
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Navbar />

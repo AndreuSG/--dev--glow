@@ -12,7 +12,7 @@ export function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const activePath = location.pathname;
-  const logoSrc = prefixPath("/img/logo-horizontal.png");
+  const logoSrc = "/img/logo-horizontal.png";
 
   useEffect(() => {
     const handleScroll = () => {
