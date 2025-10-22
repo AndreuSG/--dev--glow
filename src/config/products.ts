@@ -10,7 +10,7 @@ export const productBrands: Record<string, ProductBrand> = {
       {
         name: "RADIANCE COCKTAIL",
         description: "Unifica y aclara el tono de piel",
-        image: "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+        image: "/img/products/radiance-cocktail.png",
       },
       {
         name: "WCPR",

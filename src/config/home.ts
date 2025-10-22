@@ -85,23 +85,23 @@ export const whyUsReasons: WhyUsReason[] = [
 
 export const instagramPosts: InstagramPost[] = [
   {
-    img: prefixPath("/img/team/rosa.png"),
+    img: "/img/ig/post1.jpg",
     caption:
-      "✨¡Tú eres nuestra prioridad! ✨ Queremos sacar a relucir tu mejor versión y ofrecerte una experiencia única y personalizada.",
-    link: "https://www.instagram.com/p/CV1a5k8F3g/",
+      "Nueva temporada! 💛 En Glow comenzamos esta etapa con mucha ilusión… Hoy queremos presentaros al corazón de nuestra estética: 💖 Nuestro equipo 💖 ✨Rosa – Especialista en estética facial y corporal, manos mágicas y el motor de este proyecto. Con una experiencia de 30 años en el sector. ✨ Claudia – Recepcionista y organizadora , la que siempre te recibe con buena energía. Especializada en tratamientos corporales.",
+    link: "https://www.instagram.com/p/DO6WVfgDJ_H/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
-    img: prefixPath("/img/post3.png"),
-    caption: "Antes y después. Resultados en menos de 3 meses 🌟 #GlowUp",
+    img: "/img/ig/post2.jpg",
+    caption: "✨ Bienvenid@ a nuestro espacio✨ Cada rincón de nuestra estética ha sido pensado para ofrecerte comodidad, lo último en tecnología y una experiencia única. 💫 \n Aquí no solo cuidamos tu piel, también cuidamos de ti. 💛",
     link: "https://www.instagram.com/reel/C1HMbhALMrg/?utm_source=ig_web_copy_link&igsh=MXVlbnA5YXM1OXYxNw==",
   },
   {
-    img: prefixPath("/img/post4.png"),
+    img: "/img/ig/post3.jpg",
     caption: "Centro especializado en plasma pen ✨ #Transformation",
     link: "https://www.instagram.com/p/DKzXqoltcrc/?utm_source=ig_web_copy_link&igsh=MTg3eG4zMHN6MG9mZQ==",
   },
   {
-    img: prefixPath("/img/post5.png"),
+    img: "/img/ig/post4.jpg",
     caption:
       "¡El verano está llegando! Tiempo de sol, playa y momentos al aire libre. Pero recuerda,también aumenta la exposición de tu piel. Este es el momento perfecto para prepararla, fortalecerla y protegerla. La mejor opción es nuestra mesoterapia, un tratamiento que consiste en aplicar pequeñas dosis de vitaminas, minerales y otros ingredientes activos directamente en la piel.",
     link: "https://www.instagram.com/p/DKNO8Pst3d0/?utm_source=ig_web_copy_link&igsh=Nmx3bncxdmhscWts",

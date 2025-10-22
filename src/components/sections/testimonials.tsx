@@ -10,26 +10,26 @@ import { useState } from "react";
 const testimonials: Testimonial[] = [
   {
     content:
-      "Increíble experiencia en Glow. Los tratamientos son realmente efectivos y el personal es muy profesional. He notado una mejora significativa en mi piel desde que empecé los tratamientos.",
-    author: "María García",
+      "El servicio es excelente, en mi caso hice depilación laser y fue genial. Los cambios son increíbles desde la primera sesión, he ido a diferentes sitios pero este es el que tiene mejores maquinas y el mejor trato. Lo recomiendo mucho calidad / precio / resultados.",
+    author: "Simón Marín Blánquez",
     rating: 5,
   },
   {
     content:
-      "El mejor centro de estética que he visitado. La atención es personalizada y los resultados son visibles desde la primera sesión. El ambiente es muy relajante y acogedor.",
-    author: "Laura Martínez",
+      "Hoy he ido por primera vez y he salido encantada, Rosa es una gran profesional, te explica todo paso a paso, lo que necesitas y lo que no. Un trato inmejorable tanto por Rosa como por Claudia. Seguir así!! Habéis ganado una clienta más!!",
+    author: "cloti",
     rating: 5,
   },
   {
     content:
-      "Profesionales altamente cualificados y tecnología de última generación. Me encanta cómo cuidan cada detalle y cómo se preocupan por el bienestar de sus clientes.",
-    author: "Ana Rodríguez",
+      "Sitio maravilloso con trato excepcional. Soy profesora de yoga y pilates y he hecho varias sesiones de vacumterapia con presoterapia para compartir el cansancio y la retención de líquidos. Un 10!! Ya soy clienta fija seguro!!",
+    author: "DK Studio Palafolls",
     rating: 5,
   },
   {
     content:
-      "Desde que descubrí Glow, no he vuelto a otro centro. Sus tratamientos son innovadores y efectivos. El equipo es muy amable y siempre te hacen sentir especial.",
-    author: "Carmen López",
+      "Súper contenta con el tratamiento e increíble los resultados. Un trato excelente y unas grandes profesionales. Súper recomendado!",
+    author: "Laura Martinez",
     rating: 5,
   }
 ];
