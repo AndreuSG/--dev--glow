@@ -45,60 +45,60 @@ export const productBrands: Record<string, ProductBrand> = {
       "CASMARA es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
     products: [
       {
-        name: "Golden Age",
+        name: "Golden age",
         description: "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
         image: "/img/products/Intense_Cream_-_Casmara_large.webp",
       },
       {
-        name: "SENSATIONS",
+        name: "Sensations",
         description: "Vitamina C Biodisponible y Oro de 24K",
         image:
           "/img/products/SENSATIONS_SERUM-VITAMIN-SHOT-600x600.jpg",
       },
       {
-        name: "Q 10 RESCUE",
+        name: "Q 10 Rescue",
         description: "El rescate global para las pieles más exigentes.",
         image:
           "/img/products/q10-rescue-frasco-_-caja_web-1-1-600x554.jpg",
       },
       {
-        name: "RGNERIN",
+        name: "Rgnerin",
         description: "Alternativa cosmética al bótox.",
         image:
           "/img/products/RGnerin-frasco-NUTRI-1-600x600.jpg",
       },
       {
-        name: "AGE DEFENSE",
+        name: "Age Defense",
         description: "Prebióticos y probióticos que restauran el microbioma.",
         image:
           "/img/products/AgeDefense-2022_WEB-1-600x600.jpg",
       },
       {
-        name: "LIGHTENING",
+        name: "Lightening",
         description: "Tratamiento antiedad aclarante e iluminador.",
         image:
           "/img/products/Lightening-Clarifying-NUTRI-SPF50-Cream-50ml-2022_WEB-1-600x600.jpg",
       },
       {
-        name: "SHINE STOP",
+        name: "Shine stop",
         description:
           "Tecnología inteligente para una piel libre de imperfecciones.",
         image:
           "/img/products/02_Shine-Stop-ANTI-AGING-SEBO-REGULATING-CREAM-50ml-2023_WEB-1-600x600.jpg",
       },
       {
-        name: "RETINOL PRO AGE",
+        name: "Retinol pro age",
         description:
           "La transformación definitiva que redescubre tu belleza natural.",
         image: "/img/products/A71001_RETINOL-PROAGE_Renewal-Day-Cream_SPF50_50ml_V02-600x600.jpg",
       },
       {
-        name: "INFINITY EYE SERUM",
+        name: "Infinity eye serum",
         description: "Sérum efecto botox para el contorno de ojos.",
         image: "/img/products/INFINITY-eye-serum-frasco-caja-1-600x600.jpg",
       },
       {
-        name: "BODY SCULPTOR",
+        name: "Body sculptor",
         description: "Crema lipo reductora-reafirmante intensiva",
         image:
           "/img/products/body-scultor-200ml-1-600x554.gif",

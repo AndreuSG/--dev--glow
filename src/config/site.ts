@@ -58,22 +58,22 @@ export const siteConfig = {
   ],
   featuredProducts: [
     {
-      name: "Golden Age",
+      name: "Golden age",
       description:
         "Crema nutritiva de textura ligera formulada a base de exosomas, vitamina B12 y colágeno biomimético para aportar el cuidado global que tu piel necesita y devolverle la juventud redefiniendo los contornos de tu rostro.",
-      image: "https://images.pexels.com/photos/3762879/pexels-photo-3762879.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/img/products/Intense_Cream_-_Casmara_large.webp",
     },
     {
-      name: "Infinity Eye Serum",
+      name: "Infinity eye serum",
       description:
-        "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
-      image: "https://images.pexels.com/photos/3997379/pexels-photo-3997379.jpeg?auto=compress&cs=tinysrgb&w=800",
+        "Sérum efecto botox para el contorno de ojos. Infinity eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
+      image: "/img/products/INFINITY-eye-serum-frasco-caja-1-600x600.jpg",
     },
     {
-      name: "Retinol Pro Age",
+      name: "Retinol pro age",
       description:
         "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
-      image: "https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: "/img/products/A71001_RETINOL-PROAGE_Renewal-Day-Cream_SPF50_50ml_V02-600x600.jpg",
     },
   ],
   socialLinks: [
@@ -104,20 +104,26 @@ export const siteConfig = {
       ],
     },
     {
-      title: "Información",
-      items: [
-        { label: "Sobre nosotros", href: "#" },
-        { label: "Contacto", href: "#" },
-        { label: "Nuestro equipo", href: "/equipo" },
-        { label: "FAQ", href: "#" },
-      ],
-    },
-    {
       title: "Productos",
       items: [
         { label: "Toskani", href: "/productos#toskani" },
         { label: "Casmara", href: "/productos#casmara" },
       ],
     },
+    {
+      title: "Nuestro equipo",
+      items: [
+        { label: "Rosa", href: "/equipo#rosa" },
+        { label: "Claudia", href: "/equipo#claudia" },
+      ],
+    },  
+    {
+      title: "Siguenos",
+      items: [
+        { label: "Instagram", href: "https://www.instagram.com/glowesteticaavanzada/" },
+        { label: "Facebook", href: "https://www.facebook.com/glowesteticaavanzada" },
+        { label: "WhatsApp", href: "#" },
+      ],
+    }
   ],
 };
