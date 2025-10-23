@@ -112,5 +112,12 @@ export const siteConfig = {
         { label: "FAQ", href: "#" },
       ],
     },
+    {
+      title: "Productos",
+      items: [
+        { label: "Toskani", href: "/productos#toskani" },
+        { label: "Casmara", href: "/productos#casmara" },
+      ],
+    },
   ],
 };

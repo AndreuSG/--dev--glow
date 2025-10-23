@@ -8,34 +8,34 @@ export const productBrands: Record<string, ProductBrand> = {
       "TOSKANI es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
     products: [
       {
-        name: "RADIANCE COCKTAIL",
+        name: "Radiance Cocktail",
         description: "Unifica y aclara el tono de piel",
         image: "/img/products/radiance-cocktail.png",
       },
       {
         name: "WCPR",
         description: "Corrector global y regulador de las hiperpigmentaciones.",
-        image: "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
+        image: "/img/products/WCPR.jpg",
       },
       {
         name: "NCPR",
         description: "Nutrición global inmediata para rejuvenecimiento facial.",
-        image: "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
+        image: "/img/products/NCPR.jpg",
       },
       {
         name: "ECPR",
         description: "Rejuvenece la zona periocular de forma intensiva.",
-        image: "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
+        image: "/img/products/ECPR.jpg",
       },
       {
-        name: "ANTI AGEING",
+        name: "Anti Ageing",
         description: "Solución antiedad intensiva. Aporta efecto tensor y favorece la reconstrucción de la dermis.",
-        image: "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
+        image: "/img/products/Anti-ageing---HA-Ampoules.jpg",
       },
       {
-        name: "FIRMING",
+        name: "Firming Gel",
         description: "Potencia la síntesis de colágeno endógeno y ofrece un potente efecto reafirmante.",
-        image: "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
+        image: "/img/products/Firming-Gel.jpg",
       },
     ],
   },
@@ -45,63 +45,63 @@ export const productBrands: Record<string, ProductBrand> = {
       "CASMARA es una marca líder en cosmética profesional que combina la innovación científica con ingredientes naturales de alta calidad. Sus productos, desarrollados en laboratorios especializados, ofrecen soluciones efectivas para el cuidado de la piel, respaldadas por años de investigación y resultados probados.",
     products: [
       {
-        name: "GOLDEN AGE",
+        name: "Golden Age",
         description: "Tratamiento no invasivo para rejuvenecimiento facial, mejora de arrugas y flacidez mediante plasma.",
-        image: prefixPath("/img/services/plasma-pen.png"),
+        image: "/img/products/Intense_Cream_-_Casmara_large.webp",
       },
       {
         name: "SENSATIONS",
         description: "Vitamina C Biodisponible y Oro de 24K",
         image:
-          "https://images.pexels.com/photos/4465829/pexels-photo-4465829.jpeg",
+          "/img/products/SENSATIONS_SERUM-VITAMIN-SHOT-600x600.jpg",
       },
       {
         name: "Q 10 RESCUE",
         description: "El rescate global para las pieles más exigentes.",
         image:
-          "https://images.pexels.com/photos/4465826/pexels-photo-4465826.jpeg",
+          "/img/products/q10-rescue-frasco-_-caja_web-1-1-600x554.jpg",
       },
       {
         name: "RGNERIN",
         description: "Alternativa cosmética al bótox.",
         image:
-          "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
+          "/img/products/RGnerin-frasco-NUTRI-1-600x600.jpg",
       },
       {
         name: "AGE DEFENSE",
         description: "Prebióticos y probióticos que restauran el microbioma.",
         image:
-          "https://images.pexels.com/photos/4465124/pexels-photo-4465124.jpeg",
+          "/img/products/AgeDefense-2022_WEB-1-600x600.jpg",
       },
       {
         name: "LIGHTENING",
         description: "Tratamiento antiedad aclarante e iluminador.",
         image:
-          "https://images.pexels.com/photos/4465831/pexels-photo-4465831.jpeg",
+          "/img/products/Lightening-Clarifying-NUTRI-SPF50-Cream-50ml-2022_WEB-1-600x600.jpg",
       },
       {
         name: "SHINE STOP",
         description:
           "Tecnología inteligente para una piel libre de imperfecciones.",
         image:
-          "https://images.pexels.com/photos/4465824/pexels-photo-4465824.jpeg",
+          "/img/products/02_Shine-Stop-ANTI-AGING-SEBO-REGULATING-CREAM-50ml-2023_WEB-1-600x600.jpg",
       },
       {
         name: "RETINOL PRO AGE",
         description:
-          "Crema fluida de noche de acción transformadora y antiedad global con retinol puro en una concentración del 0,15% o el 0,3%. Reduce visiblemente los signos de la edad y el fotoenvejecimiento y consigue una renovación total de tu piel.",
-        image: prefixPath("/img/products/retinol-pro-age.jpg"),
+          "La transformación definitiva que redescubre tu belleza natural.",
+        image: "/img/products/A71001_RETINOL-PROAGE_Renewal-Day-Cream_SPF50_50ml_V02-600x600.jpg",
       },
       {
         name: "INFINITY EYE SERUM",
-        description: "Sérum efecto botox para el contorno de ojos. INFINITY Eye serum es el cuidado diario para el contorno de ojos que activa la regeneración celular de la piel y potencia sus defensas, para retrasar y revertir las causas del envejecimiento.",
-        image: prefixPath("/img/products/eye-serum.jpg"),
+        description: "Sérum efecto botox para el contorno de ojos.",
+        image: "/img/products/INFINITY-eye-serum-frasco-caja-1-600x600.jpg",
       },
       {
         name: "BODY SCULPTOR",
         description: "Crema lipo reductora-reafirmante intensiva",
         image:
-          "https://images.pexels.com/photos/4465821/pexels-photo-4465821.jpeg",
+          "/img/products/body-scultor-200ml-1-600x554.gif",
       },
     ],
   },

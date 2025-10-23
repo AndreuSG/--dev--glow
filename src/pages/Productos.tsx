@@ -2,9 +2,22 @@ import { productBrands } from "../config/products";
 import { motion } from "framer-motion";
 import { Button } from "../components/ui/button";
 import { ShoppingBag } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function ProductosPage() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.replace("#", "");
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
+
   return (
     <div className="min-h-screen bg-[#F5EDE4]">
       <section className="relative h-[70vh] overflow-hidden">
@@ -47,7 +60,7 @@ export default function ProductosPage() {
               {brand.description}
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-10 gap-y-16">
               {brand.products.map((product, index) => (
                 <motion.div
                   key={index}
